@@ -11,4 +11,4 @@
 
 ## Licences
 
-All code is licensed under the GPL V3, unless otherwhise specified
+All code is licensed under the GPL V3, unless otherwise specified
