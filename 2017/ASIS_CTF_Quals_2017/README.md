@@ -11,3 +11,5 @@ However, we still ranked 100th out of 451 teams. This CTF had many interesting c
 ## Test latex
 
 $$ed_p - 1 = 0\pmod{p-1}$$, meaning that $$ed_p - 1$$ evenly divides $$p-1$$
+
+## plz build gitbook ok thks
