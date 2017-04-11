@@ -1,6 +1,8 @@
-# CTFs
+### About
+
+* [Introduction](/README.md)
 
 ### 2017
 
-* [PicoCTF 2017](/2017/Pico\ CTF/README.md)
-* [ASIS CTF](/2017/ASIS\ CTF/README.md)
+* [picoCTF 2017 (in progress)](/2017/picoCTF_2017/README.md)
+* [ASIS CTF Quals 2017 (Apr. 7-9)](/2017/ASIS_CTF_Quals_2017/README.md)

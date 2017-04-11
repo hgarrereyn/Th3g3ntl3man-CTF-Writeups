@@ -5,9 +5,10 @@
 ## CTFs We Participated In
 
 ### 2017
-* [PicoCTF](https://2017.picoctf.com/about)
-* [ASIS CTF](https://asis-ctf.ir/home/)
+
+* [picoCTF 2017](https://2017.picoctf.com/about) (*in progress*)
+* [ASIS CTF Quals 2017](https://asis-ctf.ir/home/) (100/451)
 
 ## Licences
 
-All code is licensed under the GPL V3, unless otherwhise specified
+All code is licensed under the GPL V3, unless otherwise specified
