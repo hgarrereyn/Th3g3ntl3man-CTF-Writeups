@@ -30,6 +30,7 @@ If we look at the public key, we see that n is 1024 bits long, and essentially c
 However, theres a trick we can do to simplify this! Recall the binomial expansion:
 
 $$ (a+b)^m = a^m + ma^{m-1}b + {m \choose 2} a^{m-2}b^2 + ... +{m \choose m-2} a^{2}b^{m-2} +{m \choose m-1} ab^{m-1} + b^m $$
+
 Also
 $${m \choose m-1} = m$$
  look at [Pascal's Triangle](https://en.wikipedia.org/wiki/Pascal%27s_triangle) if you need to jog your memory of this :)
@@ -40,7 +41,7 @@ $$ (n+1)^m = n^m + mn^{m-1} + {m \choose 2} n^{m-2} + ... +{m \choose m-2} n^{2}
 
 Any equation that is true mod x, is also true mod any factor of x! n is obviously a factor of our modulus. Therefore
 $$enc \bmod n \equiv 1$$
-and 
+and
 $$enc \bmod n^2 \equiv msg*n + 1$$
 If we rearrange the latter, we get
 $$msg = (enc - 1 \bmod n^2) / n$$
