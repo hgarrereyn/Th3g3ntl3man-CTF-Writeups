@@ -11,6 +11,7 @@
   * Reverse Engineering
   * Web Exploitation
   * Binary Exploitation
+    * [Guess the Number (75)](/2017/picoCTF_2017/problems/binary/Guess_the_Number/Guess_the_Number.md)
   * Miscellaneous
     * [Leaf of the Forest (20)](/2017/picoCTF_2017/problems/misc/Leaf_of_the_Tree/Leaf_of_the_Tree.md)
     * [Leaf of the Tree (30)](/2017/picoCTF_2017/problems/misc/Leaf_of_the_Forest/Leaf_of_the_Forest.md)

@@ -13,7 +13,7 @@
 ### Web Exploitation
 
 ### Binary Exploitation
-
+* [Guess the Number (75)](problems/binary/Guess_the_Number/Guess_the_Number.md)
 ### Misc
 * [Leaf of the Forest (20)](problems/misc/Leaf_of_the_Tree/Leaf_of_the_Tree.md)
 * [Leaf of the Tree (30)](problems/misc/Leaf_of_the_Forest/Leaf_of_the_Forest.md)

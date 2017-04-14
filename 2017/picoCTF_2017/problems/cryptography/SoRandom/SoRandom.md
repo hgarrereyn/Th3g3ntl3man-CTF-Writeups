@@ -1,5 +1,5 @@
 # SoRandom
-
+#### Writeup by Valar_Dragon
 * **Cryptography**
 * *75 points*
 * We found [sorandom.py](sorandom.py) running at shell2017.picoctf.com:33123. It seems to be outputting the flag but randomizing all the characters first. Is there anyway to get back the original flag?
