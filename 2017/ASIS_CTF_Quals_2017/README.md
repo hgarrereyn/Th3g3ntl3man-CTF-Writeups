@@ -5,8 +5,8 @@ However, we still ranked 100th out of 451 teams. This CTF had many interesting c
 
 ## Problems
 
-* [A Fine OTP Server (79/Crypto)](problems/A_Fine_OTP_Server.md)
-* [DLP (158/Crypto)](problems/DLP.md)
+* [A Fine OTP Server (79/Crypto)](problems/A_Fine_OTP_Server/A_Fine_OTP_Server.md)
+* [DLP (158/Crypto)](problems/DLP/DLP.md)
 
 ## Test latex
 
