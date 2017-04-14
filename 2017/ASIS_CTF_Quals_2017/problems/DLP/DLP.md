@@ -5,7 +5,7 @@
 * You should solve a DLP challenge, but how? Of course , you don't expect us to give you a regular and boring DLP problem!
 `nc 146.185.143.84 28416`
 
-![nc Server](../images/DLP.png)
+![nc Server](DLP.png)
 
 Let's look at the function they used to encrypt this:
 
