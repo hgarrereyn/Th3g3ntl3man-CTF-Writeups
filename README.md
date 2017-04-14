@@ -6,7 +6,7 @@
 
 ### 2017
 
-* [picoCTF 2017](https://2017.picoctf.com/about) (*in progress*)
+* [picoCTF 2017](https://2017.picoctf.com/about) (7/8013 HS, 10/12593 teams total)
 * [ASIS CTF Quals 2017](https://asis-ctf.ir/home/) (100/451)
 
 ## Licences

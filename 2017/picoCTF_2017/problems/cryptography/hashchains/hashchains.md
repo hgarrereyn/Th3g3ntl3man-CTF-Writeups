@@ -7,7 +7,7 @@
 
 The key to this problem is that hashchains are easy to compute, so a simple brute force can solve the problem.
 
-A hashchain is essentially a chain of hashes:
+A hashchain with seed `a` is really just a chain of hashes:
 
 $$ a \Rightarrow hash(a) \Rightarrow hash(hash(a)) \Rightarrow... $$
 
@@ -31,7 +31,7 @@ f80b3b5ee838f2d78e461c57ee2b7c03
 The first thing to notice is that our hashchain seed is just the MD5 of our ID. So really the seed is our ID. Then we just need to setup a brute force, where we keep on taking iterations of our hashchain, until we get our goal! Doing that bruteforce, gives us `3e800ed70a66cff2a0fe067e65063a79`, and entering that gives us a friendly "Yep! That's it! You're validated"
 
 
-Well that was easy, lets go try to get the flag now!
+Well that was easy, lets go get the flag now!
 ```
 *******************************************
 ***            FlagKeeper 1.1           ***
@@ -47,7 +47,7 @@ Please authenticate as user 58
 Next token?
 ```
 
-Looks like we are supposed to use the same verification process as in registering. Looks like this time they don't give us the seed, good thing we worked out that our seed is really is our ID number.
+Looks like we are supposed to use the same verification process as in registering. Looks like this time they don't give us the seed, good thing we worked out that our seed is really our ID number.
 Using the exact same script as previously, we get `08af8baa8fe0ce4836f09fb597bc96b3`
 
 Entering that into our netcat session, we are welcomed into the server with "Hello user 58! Here's the flag: 739045aa5b814fba124d5899a2d7d78b"
