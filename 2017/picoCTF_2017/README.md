@@ -8,6 +8,7 @@
 
 ### Cryptography
 * [So Random (75)](problems/cryptography/SoRandom/SoRandom.md)
+* [HashChain (90)](problems/cryptography/hashchains/hashchains.md)
 ### Reverse Engineering
 
 ### Web Exploitation

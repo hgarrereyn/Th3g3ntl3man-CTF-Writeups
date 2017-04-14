@@ -1,9 +1,9 @@
 import md5 #Must be run in python 2.7.x
 
 #code used to calculate successive hashes in a hashchain.
-ID = 3603
+ID = 58
 seed = md5.new(str(ID)).hexdigest()
-goal = "1cbd7cc894b89dbeb1b000f129467887"\
+goal = "7707549aa0961667e6d64d308c4b82f1"\
 
 prev = ""
 hashc = seed

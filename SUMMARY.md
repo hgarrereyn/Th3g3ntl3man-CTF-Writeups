@@ -8,6 +8,7 @@
   * Forensics
   * Cryptography
     * [So Random (75)](/2017/picoCTF_2017/problems/cryptography/SoRandom/SoRandom.md)
+    * [HashChain (90)](/2017/picoCTF_2017/problems/cryptography/hashchains/hashchains.md)
   * Reverse Engineering
   * Web Exploitation
   * Binary Exploitation
