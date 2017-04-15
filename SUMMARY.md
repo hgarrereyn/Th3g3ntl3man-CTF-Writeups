@@ -4,8 +4,9 @@
 
 ### 2017
 
-* [picoCTF (in progress)](/2017/picoCTF_2017/README.md)
+* [picoCTF](/2017/picoCTF_2017/README.md)
   * Forensics
+    * [Wigle](/2017/picoCTF_2017/problems/forensics/Wigle/Wigle.md)
   * Cryptography
     * [So Random (75)](/2017/picoCTF_2017/problems/cryptography/SoRandom/SoRandom.md)
     * [HashChain (90)](/2017/picoCTF_2017/problems/cryptography/hashchains/hashchains.md)
@@ -21,6 +22,7 @@
     * [MIPS (140)]()
     * [Forest (200)]()
   * Web Exploitation
+    * [A Happy Union](/2017/picoCTF_2017/problems/web/a-happy-union/a-happy-union.md)
   * Binary Exploitation
     * [Guess the Number (75)](/2017/picoCTF_2017/problems/binary/Guess_the_Number/Guess_the_Number.md)
   * Miscellaneous
