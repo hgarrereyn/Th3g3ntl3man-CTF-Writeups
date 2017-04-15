@@ -47,7 +47,7 @@ dp = 101695762910487441200303785213341308773725756194004064644428597323996512849
 c = 42601238135749247354464266278794915846396919141313024662374579479712190675096500801203662531952565488623964806890491567595603873371264777262418933107257283084704170577649264745811855833366655322107229755242767948773320530979935167331115009578064779877494691384747024161661024803331738931358534779829183671004
 ```
 
-It appears that we are given several parameters for Chinese Remainder Theorem \(CRT\) decryption of RSA.  RSA-CRT decryption is identical to standard RSA decryption, except that instead of using a single private key $d$, we use
+It appears that we are given several parameters for Chinese Remainder Theorem \(CRT\) decryption of RSA.  RSA-CRT decryption is identical to standard RSA decryption, except that instead of using a single private key $$d$$, we use
 
 $$d_p = d \pmod{p-1}$$
 
