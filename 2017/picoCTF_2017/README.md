@@ -1,8 +1,9 @@
 # Pico CTF
 
-Competed under the name: `Daemons of Khorne`.
-* 7th place out of 8013 High school teams
-* 10th place out of 12593 teams total (including College and beyond)
+We participated as `Daemons of Khorne`
+
+* We got 7th place out of 8013 High school teams
+* We got 10th place out of 12593 teams total (including College and beyond)
 
 ## Problems
 
@@ -11,6 +12,7 @@ Competed under the name: `Daemons of Khorne`.
 ### Cryptography
 * [So Random (75)](problems/cryptography/SoRandom/SoRandom.md)
 * [HashChain (90)](problems/cryptography/hashchains/hashchains.md)
+* [Weirder RSA (150)](problems/cryptography/weirderRSA/weirderRSA.md)
 ### Reverse Engineering
 * [Hex2Raw (20)](problems/reverse/Hex2Raw/Hex2Raw.md)
 * [Raw2Hex (20)](problems/reverse/Raw2Hex/Raw2Hex.md)

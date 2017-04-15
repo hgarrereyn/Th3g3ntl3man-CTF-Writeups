@@ -9,6 +9,7 @@
   * Cryptography
     * [So Random (75)](/2017/picoCTF_2017/problems/cryptography/SoRandom/SoRandom.md)
     * [HashChain (90)](/2017/picoCTF_2017/problems/cryptography/hashchains/hashchains.md)
+    * [Weirder RSA (150)](/2017/picoCTF_2017/problems/cryptography/weirderRSA/weirderRSA.md)
   * Reverse Engineering
     * [Hex2Raw (20)](/2017/picoCTF_2017/problems/reverse/Hex2Raw/Hex2Raw.md)
     * [Raw2Hex (20)](/2017/picoCTF_2017/problems/reverse/Raw2Hex/Raw2Hex.md)
