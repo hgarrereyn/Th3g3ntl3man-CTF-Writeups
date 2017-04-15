@@ -8,7 +8,8 @@
 nc shell2017.picoctf.com 27465
 [smallsign.py](smallsign.py)
 
-If we connect to the server, we see that it gives us a RSA modulus, public exponent, and a maximum of 1 minute for it to encrypt and return any message we'd like. Once we've encrypted as many messages we'd like in our 1 minute time frame, it asks us to forge an RSA signature of a number they give.
+If we connect to the server, we see that it gives us a RSA modulus, public exponent, and a maximum of 1 minute for it to encrypt and return any message we'd like.
+Once we've encrypted as many messages we'd like in our 1 minute time frame, it asks us to forge an RSA signature of a number they give.
 
 The equations for encrypting and decrypting RSA Signatures are (assuming no padding, as is the case in this problem):
 
@@ -20,7 +21,10 @@ $$ c_1c_2  \bmod N \equiv m_1^dm_2^d \bmod N\equiv (m_1m_2)^d \bmod N$$
 If we multiply two ciphertexts, the result of decrypting the ciphertexts will be the product of the original two messages!
 
 So this makes our plan for forging pretty clear, we need to get the factors for our challenge encrypted in the first phase
-and then multiply the ciphertexts of those factors together. Except we don't know our challenge beforehand. The smaller the prime p, the more multiples of it will exist on range $[0,2^{32})$, so to increase our chances of being able to factor our random number we should get the ciphertexts of the smallest primes in the first phase. In mathematics terminology, we are looking for a challenge that is B-smooth, where B is the index of the largest prime we are looking at.
+and then multiply the ciphertexts of those factors together.
+Except we don't know our challenge beforehand.
+The smaller the prime p, the more multiples of it will exist on range $[0,2^{32})$, so to increase our chances of being able to factor our random number we should get the ciphertexts of the smallest primes in the first phase.
+In mathematics terminology, we are looking for a challenge that is B-smooth, where B is the index of the largest prime we are looking at.
 
 So we just have to keep on trying to get the server to sign primes with the varying modulii, until we get a challenge that is B-smooth.
 
@@ -65,3 +69,46 @@ It took 263.702187061 seconds of actual time
 ```
 
 So this took a reasonable amount of time to complete!
+
+
+But I want to take this one step further!
+
+What is the optimal number of primes to use?  I was guessing when I chose 1000 as the upper bound for primes in this instance.
+10 tries seems to be fairly lucky from my previous tests, as I've used the primes <= 3000, and had it take 15 tries before I got the flag, with each signing period taking double the time period used for the above test case.
+
+Let Ψ(N,B) represent the number of numbers less than N that are B-smooth [(the de Bruijn function)](https://en.wikipedia.org/wiki/Smooth_number#Distribution), for small B we can use the approximation
+
+
+$$ \Psi(N,B) = \frac{1}{\pi(B)!} \prod_{p \leq B} \frac{\log N}{\log p}$$
+
+Note that
+$$ \pi(B) $$
+is the number of primes less than or equal to B.
+The higher the Ψ(N,B), the more likely our challenge will be a solution.
+
+Lets assume that the time per signing increases linearly with the number of factors (most of the time being spent in network lag)
+
+Then we want to maximize:
+$$ \frac{\Psi(N,B)}{\pi(B)}$$
+Through manual testing, I've determined the maximum value of B usable with my solution script, until it takes over 1 minute is around 3000, so we can just brute force for the optimal value of B!
+
+Brute forcing for b gives the optimum B as B = 13 (including 13) Trying this though, it doesn't end up being faster. This is because the time to establish a socket takes longer than a single check. Timing by hand, the time to establish a new socket is approximately 2-3 times that of the time to check the 6 primes.
+So lets instead try to account for these by maximizing:
+$$ \frac{\Psi(N,B)}{\pi(B) + 15}$$
+(Essentially saying that those time delays are worth 2.5 checks)
+
+Doing this, we get 17 as the optimum prime to be using. But testing, this still doesn't seem to be the case.
+So it looks like that the small B approximation is breaking down.
+
+So now we have to resort to the full form of Ψ(N,B), which is equal to the [Dickman-de-Brujin function](https://en.wikipedia.org/wiki/Dickman_function) with a small error.
+
+Unfortunately the Dickman-de-Brujin function involves solving the following delay differential equation.
+
+$$ up'(u) + p(u-1) = 0 $$
+
+And well uh, this differential equation is hard. We are concerned with the range
+$$ 0 \leq u \leq 1 $$
+which makes a unit step function hard, if not impossible to use in conjunction with the Laplace Transform.
+Essentially, I can't figure out how to solve this Diff. Eq. so I can't really find the optimum number of primes! But Wikipedia doesn't have the closed form solution to this Diff Eq on the Dickman function page, and in stead only has a first order approximation, so it probably is a very hard Diff. Eq.
+
+Please let me know if you can solve this diff. eq! Then we can find the optimum number of primes to use :)
