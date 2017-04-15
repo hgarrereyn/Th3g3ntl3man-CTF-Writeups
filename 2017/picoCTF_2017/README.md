@@ -8,7 +8,7 @@ We participated as `Daemons of Khorne`
 ## Problems
 
 ### Forensics
-* [Wigle](/2017/picoCTF_2017/problems/forensics/Wigle/Wigle.md)
+* [Wigle](/2017/picoCTF_2017/problems/forensics/Wigle/wigle.md)
 ### Cryptography
 * [So Random (75)](problems/cryptography/SoRandom/SoRandom.md)
 * [HashChain (90)](problems/cryptography/hashchains/hashchains.md)
