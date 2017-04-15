@@ -19,7 +19,7 @@ We participated as `Daemons of Khorne`
 * [A Thing Called the Stack (60)](problems/reverse/A_Thing_Called_the_Stack/A_Thing_Called_the_Stack.md)
 * [Programmers Assemble (75)](problems/reverse/Programmers_Assemble/Programmers_Assemble.md)
 * [JSut Duck it Up (100)](problems/reverse/JSut_Duck_it_Up/JSut_Duck_it_Up.md)
-* [Coffee (115)]()
+* [Coffee (115)](problems/reverse/Coffee/Coffee.md)
 * [Much Ado About Hacking (165)]()
 * [MIPS (140)]()
 * [Forest (200)]()
