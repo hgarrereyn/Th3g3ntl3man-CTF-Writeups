@@ -6,7 +6,7 @@
 
 * [picoCTF](/2017/picoCTF_2017/README.md)
   * Forensics
-    * [Wigle](/2017/picoCTF_2017/problems/forensics/Wigle/Wigle.md)
+    * [Wigle](/2017/picoCTF_2017/problems/forensics/Wigle/wigle.md)
   * Cryptography
     * [So Random (75)](/2017/picoCTF_2017/problems/cryptography/SoRandom/SoRandom.md)
     * [HashChain (90)](/2017/picoCTF_2017/problems/cryptography/hashchains/hashchains.md)
