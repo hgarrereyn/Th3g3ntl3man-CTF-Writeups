@@ -4,7 +4,7 @@
 
 ### 2017
 
-* [picoCTF (in progress)](/2017/picoCTF_2017/README.md)
+* [picoCTF](/2017/picoCTF_2017/README.md)
   * Forensics
     * [Wigle](/2017/picoCTF_2017/problems/forensics/Wigle/Wigle.md)
   * Cryptography
