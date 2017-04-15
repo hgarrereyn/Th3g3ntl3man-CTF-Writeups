@@ -1,5 +1,5 @@
 # Leaf of the Tree
-
+#### Writeup by Valar_Dragon
 * **Misc**
 * *20 points*
 * Description: We found this annoyingly named directory tree starting at /problems/a45d1519bd193bc3a273744c83fad1e2. It would be pretty lame to type out all of those directory names but maybe there is something in there worth finding? And maybe we dont need to type out all those names...? Follow the trunk, using cat and ls!
