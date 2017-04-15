@@ -1,9 +1,9 @@
 # Pico CTF
 
-We participated as Daemons of Khorne
+We participated as `Daemons of Khorne`
 
-We got 7th place out of 8013 High school teams
-We got 10th place out of 12593 teams total (including College and beyond)
+* We got 7th place out of 8013 High school teams
+* We got 10th place out of 12593 teams total (including College and beyond)
 
 ## Problems
 
@@ -14,6 +14,15 @@ We got 10th place out of 12593 teams total (including College and beyond)
 * [HashChain (90)](problems/cryptography/hashchains/hashchains.md)
 * [Weirder RSA (150)](problems/cryptography/weirderRSA/weirderRSA.md)
 ### Reverse Engineering
+* [Hex2Raw (20)](problems/reverse/Hex2Raw/Hex2Raw.md)
+* [Raw2Hex (20)](problems/reverse/Raw2Hex/Raw2Hex.md)
+* [A Thing Called the Stack (60)](problems/reverse/A_Thing_Called_the_Stack/A_Thing_Called_the_Stack.md)
+* [Programmers Assemble (75)](problems/reverse/Programmers_Assemble/Programmers_Assemble.md)
+* [JSut Duck it Up (100)](problems/reverse/JSut_Duck_it_Up/JSut_Duck_it_Up.md)
+* [Coffee (115)]()
+* [Much Ado About Hacking (165)]()
+* [MIPS (140)]()
+* [Forest (200)]()
 
 ### Web Exploitation
 
