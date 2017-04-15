@@ -37,29 +37,29 @@ c = 4260123813574924735446426627879491584639691914131302466237457947971219067509
 
 It appears that we are given several parameters for Chinese Remainder Theorem \(CRT\) decryption of RSA.  RSA-CRT decryption is identical to standard RSA decryption, except that instead of using a single private key $d$, we use
 
-$d_p = d \pmod{p-1}$
+$$d_p = d \pmod{p-1}$$
 
-$d_q = d \pmod{q-1}$
+$$d_q = d \pmod{q-1}$$
 
 If used correctly, this allows for speedup when compared to normal RSA decryption, since two smaller modular exponentiations are performed with significantly smaller exponents.
 
-Unfortunately, we are not given $d_q$. However, since we are given $d_p$, we are essentially given an entire portion of the private key - effectively compromising the security of the cryptosystem.
+Unfortunately, we are not given $$d_q$$. However, since we are given $$d_p$$, we are essentially given an entire portion of the private key - effectively compromising the security of the cryptosystem.
 
-Howgrave-Graham showed that as long as we know the lower half of the Least Significant Bits (LSBs) of $d_p$, and $e$ is of size *poly(log(N))*, we can obtain the factorization of the modulus in polynomial time.  
+Howgrave-Graham showed that as long as we know the lower half of the Least Significant Bits (LSBs) of $$d_p$$, and $$e$$ is of size *poly(log(N))*, we can obtain the factorization of the modulus in polynomial time.  
 
-We know from RSA-CRT that $ed_p = 1 \pmod{p-1}$
+We know from RSA-CRT that $$ed_p = 1 \pmod{p-1}$$
 
 Rearranging the equation: we arrive at
 
-$ed_p - 1 = 0\pmod{p-1}$, meaning that $ed_p - 1$ evenly divides $p-1$.
+$$ed_p - 1 = 0\pmod{p-1}$$, meaning that $$ed_p - 1$$ evenly divides $$p-1$$.
 
 This can be rewritten as:
 
-$ed_p - 1 = k(p-1)$, where $k\in\mathbb{N}$ and $k < e$, since $k(p-1)$ is a multiple of  $ed_p - 1$
+$$ed_p - 1 = k(p-1)$$, where $$k\in\mathbb{N}$$ and $$k < e$$, since $$k(p-1)$$ is a multiple of  $$ed_p - 1$$
 
-Solving for $p$, we obtain $p = \frac{ed_p - 1 + k}{k}$
+Solving for $$p$$, we obtain $$p = \frac{ed_p - 1 + k}{k}$$
 
-Since $e = 65537$, it is completely feasible to try every $k$ in the range of $e$ until we obtain a value of $k$ such that $\frac{N}{p} = \lfloor{}\frac{N}{p}\rfloor{}$, in which case we know that we have obtained the prime factor $q$ and thus the factorization of $N$.
+Since $$e = 65537$$, it is completely feasible to try every $$k$$ in the range of $$e$$ until we obtain a value of $$k$$ such that $$\frac{N}{p} = \lfloor{}\frac{N}{p}\rfloor{}$$, in which case we know that we have obtained the prime factor $$q$$ and thus the factorization of $$N$$.
 
 I wrote the following python script to perform the task:
 
