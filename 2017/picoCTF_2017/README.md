@@ -8,7 +8,7 @@ We participated as `Daemons of Khorne`
 ## Problems
 
 ### Forensics
-
+* [Wigle](/2017/picoCTF_2017/problems/forensics/Wigle/wigle.md)
 ### Cryptography
 * [So Random (75)](problems/cryptography/SoRandom/SoRandom.md)
 * [HashChain (90)](problems/cryptography/hashchains/hashchains.md)
@@ -25,7 +25,7 @@ We participated as `Daemons of Khorne`
 * [Forest (200)](problems/reverse/Forest/Forest.md)
 
 ### Web Exploitation
-
+* [A Happy Union](/2017/picoCTF_2017/problems/web/a-happy-union/a-happy-union.md)
 ### Binary Exploitation
 * [Guess the Number (75)](problems/binary/Guess_the_Number/Guess_the_Number.md)
 ### Misc

@@ -73,7 +73,7 @@ You entered 2147483647. Let's see if it was right...
 `10000000010010000101001010110000`
 The leading digit being a 1 means the number is negative in C. But that doesn't matter to us, as val is being bit shifted by 4 to the right, so that negative sign will go away! We just need to figure out what signed int in C has that binary. Negative numbers in C are `-2**31 + (remaining binary)`. The remaining binary is `10010000101001010110000` which is 4739760.
 
-Thus the number we are looking for is $-2142743888$, because that will bitshift to 0x804852b, which is what we are looking for!
+Thus the number we are looking for is $$-2142743888$$, because that will bitshift to 0x804852b, which is what we are looking for!
 
 Trying that:
 
