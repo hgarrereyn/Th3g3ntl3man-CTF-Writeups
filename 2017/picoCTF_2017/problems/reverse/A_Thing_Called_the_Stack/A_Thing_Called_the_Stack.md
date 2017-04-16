@@ -2,13 +2,13 @@
 #### Writeup by hgarrereyn
 * **Reverse Engineering**
 * *60 points*
-* Description: A friend was stacking dinner plates, and handed you this, saying something about a "stack". Can you find the difference between the value of esp at the end of the code, and the location of the saved return address? Assume a 32 bit system. Submit the answer as a hexidecimal number, with no extraneous 0s. For example, the decimal number 2015 would be submitted as 0x7df, not 0x000007df.
+* Description: A friend was stacking dinner plates, and handed you [this](https://raw.githubusercontent.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/0e4c994d51130f747bf8d9932274cb85e3f0f1c5/2017/picoCTF_2017/problems/reverse/A_Thing_Called_the_Stack/assembly.s), saying something about a "stack". Can you find the difference between the value of esp at the end of the code, and the location of the saved return address? Assume a 32 bit system. Submit the answer as a hexidecimal number, with no extraneous 0s. For example, the decimal number 2015 would be submitted as 0x7df, not 0x000007df.
 
 # Links
 
 Here is the file we were given:
 
-**assembly.s**
+[**assembly.s**](https://raw.githubusercontent.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/0e4c994d51130f747bf8d9932274cb85e3f0f1c5/2017/picoCTF_2017/problems/reverse/A_Thing_Called_the_Stack/assembly.s)
 ```asm
 foo:
     pushl %ebp

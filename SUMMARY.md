@@ -17,10 +17,10 @@
     * [A Thing Called the Stack (60)](/2017/picoCTF_2017/problems/reverse/A_Thing_Called_the_Stack/A_Thing_Called_the_Stack.md)
     * [Programmers Assemble (75)](/2017/picoCTF_2017/problems/reverse/Programmers_Assemble/Programmers_Assemble.md)
     * [JSut Duck it Up (100)](/2017/picoCTF_2017/problems/reverse/JSut_Duck_it_Up/JSut_Duck_it_Up.md)
-    * [Coffee (115)]()
+    * [Coffee (115)](/2017/picoCTF_2017/problems/reverse/Coffee/Coffee.md)
     * [Much Ado About Hacking (165)]()
     * [MIPS (140)]()
-    * [Forest (200)]()
+    * [Forest (200)](/2017/picoCTF_2017/problems/reverse/Forest/Forest.md)
   * Web Exploitation
     * [A Happy Union](/2017/picoCTF_2017/problems/web/a-happy-union/a-happy-union.md)
   * Binary Exploitation
