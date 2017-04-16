@@ -2,11 +2,13 @@
 #### Writeup by hgarrereyn
 * **Reverse Engineering**
 * *200 points*
-* Description: I was wandering the forest and found a file. It came with some string
+* Description: I was wandering the forest and found a [file](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/148e024ea0ce0010dd6446fe3f522e6fb7be9d09/2017/picoCTF_2017/problems/reverse/Forest/forest). It came with some [string](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/148e024ea0ce0010dd6446fe3f522e6fb7be9d09/2017/picoCTF_2017/problems/reverse/Forest/string.txt)
 
 # Files
 
-**String**
+[**forest**](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/148e024ea0ce0010dd6446fe3f522e6fb7be9d09/2017/picoCTF_2017/problems/reverse/Forest/forest)
+
+[**string.txt**](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/148e024ea0ce0010dd6446fe3f522e6fb7be9d09/2017/picoCTF_2017/problems/reverse/Forest/string.txt)
 ```
 DLLDLDLLLLLDLLLLRLDLLDLDLLLRRDLLLLRDLLLLLDLLRLRRRDLLLDLLLDLLLLLDLLRDLLLRRLDLLLDLLLLLDLLLRLDLLDLLRLRRDLLLDLLRLRRRDLLRDLLLLLDLLLRLDLLDLLRLRRDLLLLLDLLRDLLLRRLDLLLDLLLLLDLLRDLLRLRRDLLLDLLLDLLRLRRRDLLLLLDLLLLRLDLLLRRLRRDDLLLRRDLLLRRLRDLLLRLDLRRDDLLLRLDLLLRRRDLLRLRRRDLRRLD
 ```
@@ -40,7 +42,7 @@ I also renamed locations and subroutines in Hopper to make it clearer what was g
 
 ### First look
 
-![Image 1]()
+![Image 1](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/148e024ea0ce0010dd6446fe3f522e6fb7be9d09/2017/picoCTF_2017/problems/reverse/Forest/res/forest1.png)
 
 I opened the binary in Hopper and peeked at the data section. It looks like we will see: `You did it! Submit the input as the flag` if we have the correct password. Also, I noticed an interesting string: `yuoteavpxqgrlsdhwfjkzi_cmbn` which doesn't look like a flag but might be used for something.
 
@@ -48,7 +50,7 @@ Next, I searched for references to the "You did it..." string:
 
 Here is the function that prints it out:
 
-![Image 2]()
+![Image 2](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/148e024ea0ce0010dd6446fe3f522e6fb7be9d09/2017/picoCTF_2017/problems/reverse/Forest/res/forest2.png)
 
 Specifically, this line does the final check:
 
@@ -373,13 +375,13 @@ So, now we have some idea of what is on the heap. We know that there is a char p
 
 ```
 Heap:
-[8 bytes ??]	+0
-[char]			+8
+[8 bytes ??]  +0
+[char]        +8
 ```
 
 Let's see what happens if `var_pass_char` doesn't match the heap char:
 
-```
+```asm
 			heap_does_not_match_pass:
 08048593         mov        eax, dword [ebp+heap_pointer]                       ; CODE XREF=check_pass_char+48
 08048596         movzx      eax, byte [eax+8]
@@ -504,7 +506,7 @@ Breakpoint 1, 0x08048760 in ?? ()
 0x804a150:	122 'z'
 ```
 
-![layer1]()
+![layer1](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/148e024ea0ce0010dd6446fe3f522e6fb7be9d09/2017/picoCTF_2017/problems/reverse/Forest/res/layer1.png)
 
 When we split the string into segments, we get:
 
@@ -520,7 +522,7 @@ So for the first character, we don't traverse past the root element. Therefore, 
 
 Here is the final tree:
 
-![]()
+![layer_full](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/148e024ea0ce0010dd6446fe3f522e6fb7be9d09/2017/picoCTF_2017/problems/reverse/Forest/res/layer_full.png)
 
 Then you simply go segment by segment and traverse the tree:
 
