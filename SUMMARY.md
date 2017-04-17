@@ -25,7 +25,7 @@
     * [A Happy Union](/2017/picoCTF_2017/problems/web/a-happy-union/a-happy-union.md)
   * Binary Exploitation
     * [Guess the Number (75)](/2017/picoCTF_2017/problems/binary/Guess_the_Number/Guess_the_Number.md)
-	* [Flagsay 2 (150)](problems/binary/Flagsay_2/Flagsay_2.md)
+	* [Flagsay 2 (150)](/2017/picoCTF_2017/problems/binary/Flagsay_2/Flagsay_2.md)
 	* [Chat Logger (200)](/2017/picoCTF_2017/problems/binary/Chat_Logger/Chat_Logger.md)
   * Miscellaneous
     * [Leaf of the Forest (20)](/2017/picoCTF_2017/problems/misc/Leaf_of_the_Tree/Leaf_of_the_Tree.md)
