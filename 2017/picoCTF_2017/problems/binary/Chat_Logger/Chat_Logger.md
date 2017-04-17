@@ -2,7 +2,7 @@
 #### Writeup by hgarrereyn
 * **Binary Exploitation**
 * *200 points*
-* Description: You've been given admin access to the chat logs for our organization to help clean up the language. See if you can get a shell on shell2017.picoctf.com:51628. chat-logger Source
+* Description: You've been given admin access to the chat logs for our organization to help clean up the language. See if you can get a shell on shell2017.picoctf.com:51628. [chat-logger](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/a15d78650a17f04f8a13e20f4f257d0d9954996f/2017/picoCTF_2017/problems/binary/Chat_Logger/chat-logger) [Source](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/a15d78650a17f04f8a13e20f4f257d0d9954996f/2017/picoCTF_2017/problems/binary/Chat_Logger/server.c)
 
 # Solution
 
@@ -34,7 +34,7 @@ It took a bit of fiddling to get the program to malloc buffers that were right n
 
 # Annotated Script
 
-[**exploitChatLogger.py**]()
+[**exploitChatLogger.py**](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/a15d78650a17f04f8a13e20f4f257d0d9954996f/2017/picoCTF_2017/problems/binary/Chat_Logger/exploitChatLogger.py)
 
 ```python
 # By Harrison Green <hgarrereyn>
