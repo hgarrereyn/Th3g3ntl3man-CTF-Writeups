@@ -34,6 +34,7 @@ We participated as `Daemons of Khorne`
 
 ### Binary Exploitation
 * [Guess the Number (75)](problems/binary/Guess_the_Number/Guess_the_Number.md)
+* [Enter The Matrix (150)](problems/binary/Enter_The_Matrix/Enter_The_Matrix.md)
 * [Flagsay 2 (150)](problems/binary/Flagsay_2/Flagsay_2.md)
 * [Choose (150)](problems/binary/Choose/Choose.md)
 * [Chat Logger (200)](problems/binary/Chat_Logger/Chat_Logger.md)
