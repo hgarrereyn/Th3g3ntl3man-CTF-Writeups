@@ -23,6 +23,7 @@
     * [Forest (200)]()
   * Web Exploitation
     * [A Happy Union](/2017/picoCTF_2017/problems/web/a-happy-union/a-happy-union.md)
+    * [TW_GR_E4_STW](/2017/picoCTF_2017/problems/web/tw_gr_e4_stw/tw_gr_e4_stw.md)
   * Binary Exploitation
     * [Guess the Number (75)](/2017/picoCTF_2017/problems/binary/Guess_the_Number/Guess_the_Number.md)
   * Miscellaneous
