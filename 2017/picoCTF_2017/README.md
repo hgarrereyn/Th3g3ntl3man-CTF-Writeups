@@ -24,8 +24,6 @@ We participated as `Daemons of Khorne`
 * [Programmers Assemble (75)](problems/reverse/Programmers_Assemble/Programmers_Assemble.md)
 * [JSut Duck it Up (100)](problems/reverse/JSut_Duck_it_Up/JSut_Duck_it_Up.md)
 * [Coffee (115)](problems/reverse/Coffee/Coffee.md)
-* [Much Ado About Hacking (165)]()
-* [MIPS (140)]()
 * [Forest (200)](problems/reverse/Forest/Forest.md)
 
 ### Web Exploitation
