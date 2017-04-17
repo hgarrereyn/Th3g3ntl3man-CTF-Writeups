@@ -23,9 +23,10 @@
     * [Forest (200)](/2017/picoCTF_2017/problems/reverse/Forest/Forest.md)
   * Web Exploitation
     * [A Happy Union](/2017/picoCTF_2017/problems/web/a-happy-union/a-happy-union.md)
+    * [TW_GR_E4_STW](/2017/picoCTF_2017/problems/web/tw_gr_e4_stw/tw_gr_e4_stw.md)
   * Binary Exploitation
     * [Guess the Number (75)](/2017/picoCTF_2017/problems/binary/Guess_the_Number/Guess_the_Number.md)
-	* [Flagsay 2 (150)](problems/binary/Flagsay_2/Flagsay_2.md)
+	* [Flagsay 2 (150)](/2017/picoCTF_2017/problems/binary/Flagsay_2/Flagsay_2.md)
 	* [Choose (150)](/2017/picoCTF_2017/problems/binary/Choose/Choose.md)
 	* [Chat Logger (200)](/2017/picoCTF_2017/problems/binary/Chat_Logger/Chat_Logger.md)
   * Miscellaneous
