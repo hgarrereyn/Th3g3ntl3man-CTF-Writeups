@@ -2,11 +2,11 @@
 #### Writeup by hgarrereyn
 * **Binary Exploitation**
 * *150 points*
-* Description: The Matrix awaits you. Take the red pill and begin your journey. Source. Jack in at shell2017.picoctf.com:9417.
+* Description: The Matrix awaits you. Take the [red pill](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/141d36ad9f37c54a44e54e334ca87d0935feb916/2017/picoCTF_2017/problems/binary/Enter_The_Matrix/matrix) and begin your journey. [Source](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/141d36ad9f37c54a44e54e334ca87d0935feb916/2017/picoCTF_2017/problems/binary/Enter_The_Matrix/matrix.c). Jack in at shell2017.picoctf.com:9417.
 
 # Overview
 
-This program allows you to create matricies of various sizes which are stored on the heap. You can then set/get the value at specific indecies.
+This program allows you to create matricies of various sizes which are stored on the heap. You can then set/get the value at a specific index.
 
 # Solution
 
@@ -79,17 +79,19 @@ So this bug means we can write outside of our assigned heap space. My approach w
 
 When we create two matrices on the heap, they are allocated like this:
 
-![mat1]()
+![mat1](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/141d36ad9f37c54a44e54e334ca87d0935feb916/2017/picoCTF_2017/problems/binary/Enter_The_Matrix/mat1.png)
 
 And due to the indexing bug, we end up writing to the following memory locations:
 
-![mat2]()
+![mat2](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/141d36ad9f37c54a44e54e334ca87d0935feb916/2017/picoCTF_2017/problems/binary/Enter_The_Matrix/mat2.png)
 
 Notice how if we write to `3,0` we overwrite the `data` pointer of matrix 2. We can set this to point to the GOT table and perform our attack.
 
 The only catch is that the program reads and writes *float values*. So we just have to do a little bit of encoding between hex addresses and floats.
 
 # Script
+
+[**exploitMatrix.py**](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/141d36ad9f37c54a44e54e334ca87d0935feb916/2017/picoCTF_2017/problems/binary/Enter_The_Matrix/exploitMatrix.py)
 
 ```python
 # By Harrison Green <hgarrereyn>
