@@ -2,7 +2,7 @@
 #### Writeup by hgarrereyn
 * **Binary Exploitation**
 * *150 points*
-* Description: Unhappy that you can't choose which enemies to fight? Choose your own adventure! Source. Connect on shell2017.picoctf.com:47601. ASLR is not enabled.
+* Description: Unhappy that you can't choose which enemies to fight? [Choose](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/00b7c0f4229784ec935e2defcf470bc25ef3fa9b/2017/picoCTF_2017/problems/binary/Choose/choose) your own adventure! [Source](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/00b7c0f4229784ec935e2defcf470bc25ef3fa9b/2017/picoCTF_2017/problems/binary/Choose/choose.c). Connect on shell2017.picoctf.com:47601. ASLR is not enabled.
 
 # Overview
 
@@ -125,7 +125,7 @@ etc...
 
 # Script
 
-[**exploitChoose.py**]()
+[**exploitChoose.py**](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/00b7c0f4229784ec935e2defcf470bc25ef3fa9b/2017/picoCTF_2017/problems/binary/Choose/exploitChoose.py)
 
 ```python
 # By Harrison Green <hgarrereyn>
