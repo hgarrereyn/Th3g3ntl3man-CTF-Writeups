@@ -2,17 +2,25 @@
 #### Writeup by hgarrereyn
 * **Binary Exploitation**
 * *150 points*
-* Description: Apparently I messed up using system(). I'm pretty sure this one is secure though! I hope flagsay-2 is just as exhilarating as the the first one! Source. Connect on shell2017.picoctf.com:19884.
+* Description: Apparently I messed up using system(). I'm pretty sure this one is secure though! I hope [flagsay-2](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/ae8966a89649c86e35ed47c73224ed435234f47c/2017/picoCTF_2017/problems/binary/Flagsay_2/flagsay-2) is just as exhilarating as the the first one! [Source](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/ae8966a89649c86e35ed47c73224ed435234f47c/2017/picoCTF_2017/problems/binary/Flagsay_2/flagsay-2.c). Connect on shell2017.picoctf.com:19884.
 
 # Solution
 
-This problem was a format string attack like `Console Config`.
+This program was vulnerable to a format string attack. However it was made difficult because the buffer was not stored on the stack. Additionally ASLR was enabled and therefore stack/function addresses could not be hardcoded.
 
-However, the input buffer was not on the stack so you had to find some way to get control of stack pointers.
+Specifically, line `61` was vulnerable by calling `printf` on a user supplied buffer:
+
+```c
+printf(tempFlag);
+```
+
+In order to solve this problem, I started searching for pointers on the stack that either pointed into libc (so I could leak system) or pointed to stack addresses I could reach within the format string attack.
+
+Additionally, I realized that if I wanted to overwrite the GOT table, I needed to be able to do it in a single format string attack. If I tried to do it in two, the program would jump to some undefined location. Therefore I needed to prepare two pointers on the stack pointing to `<strlen@GOT>` and `<strlen@GOT + 2>` so I could do two `$hn` writes at once.
 
 I found the following useful pointers:
 
-* `%17` pointed to `%53` on the stack. So I could write an address to `%53` and then write to any address.
+* `%17` pointed to `%53` on the stack. So I could perform a multistep format string attack to get an arbitrary write such as: `%17$n` then `%53$n`.
 * `%23` and `%24` had pointers to addresses near the one I wanted to overwrite so I was able to overwrite just one or two bytes and get them each pointing to the GOT table (2 bytes apart)
 * `%2` was pointing into libc, so I could use it as a reference to calculate the address of `system`
 
@@ -39,6 +47,8 @@ As part of this writeup, I wrote a script for completeness.
 6. You've got shell!
 
 # Script
+
+[**exploitFlagsay2.py**](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/ae8966a89649c86e35ed47c73224ed435234f47c/2017/picoCTF_2017/problems/binary/Flagsay_2/exploitFlagsay2.py)
 
 ```python
 # By Harrison Green <hgarrereyn>
