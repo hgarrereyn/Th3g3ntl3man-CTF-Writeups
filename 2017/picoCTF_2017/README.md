@@ -9,10 +9,12 @@ We participated as `Daemons of Khorne`
 
 ### Forensics
 * [Wigle](/2017/picoCTF_2017/problems/forensics/Wigle/wigle.md)
+
 ### Cryptography
 * [So Random (75)](problems/cryptography/SoRandom/SoRandom.md)
 * [HashChain (90)](problems/cryptography/hashchains/hashchains.md)
 * [Weirder RSA (150)](problems/cryptography/weirderRSA/weirderRSA.md)
+
 ### Reverse Engineering
 * [Hex2Raw (20)](problems/reverse/Hex2Raw/Hex2Raw.md)
 * [Raw2Hex (20)](problems/reverse/Raw2Hex/Raw2Hex.md)
@@ -26,8 +28,11 @@ We participated as `Daemons of Khorne`
 
 ### Web Exploitation
 * [A Happy Union](/2017/picoCTF_2017/problems/web/a-happy-union/a-happy-union.md)
+
 ### Binary Exploitation
 * [Guess the Number (75)](problems/binary/Guess_the_Number/Guess_the_Number.md)
+* [Chat Logger (200)](problems/binary/Chat_Logger/Chat_Logger.md)
+
 ### Misc
 * [Leaf of the Forest (20)](problems/misc/Leaf_of_the_Tree/Leaf_of_the_Tree.md)
 * [Leaf of the Tree (30)](problems/misc/Leaf_of_the_Forest/Leaf_of_the_Forest.md)
