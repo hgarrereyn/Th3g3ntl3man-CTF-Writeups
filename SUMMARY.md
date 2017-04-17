@@ -17,15 +17,17 @@
     * [A Thing Called the Stack (60)](/2017/picoCTF_2017/problems/reverse/A_Thing_Called_the_Stack/A_Thing_Called_the_Stack.md)
     * [Programmers Assemble (75)](/2017/picoCTF_2017/problems/reverse/Programmers_Assemble/Programmers_Assemble.md)
     * [JSut Duck it Up (100)](/2017/picoCTF_2017/problems/reverse/JSut_Duck_it_Up/JSut_Duck_it_Up.md)
-    * [Coffee (115)]()
+    * [Coffee (115)](/2017/picoCTF_2017/problems/reverse/Coffee/Coffee.md)
     * [Much Ado About Hacking (165)]()
     * [MIPS (140)]()
-    * [Forest (200)]()
+    * [Forest (200)](/2017/picoCTF_2017/problems/reverse/Forest/Forest.md)
   * Web Exploitation
     * [A Happy Union](/2017/picoCTF_2017/problems/web/a-happy-union/a-happy-union.md)
     * [TW_GR_E4_STW](/2017/picoCTF_2017/problems/web/tw_gr_e4_stw/tw_gr_e4_stw.md)
   * Binary Exploitation
     * [Guess the Number (75)](/2017/picoCTF_2017/problems/binary/Guess_the_Number/Guess_the_Number.md)
+	* [Flagsay 2 (150)](/2017/picoCTF_2017/problems/binary/Flagsay_2/Flagsay_2.md)
+	* [Chat Logger (200)](/2017/picoCTF_2017/problems/binary/Chat_Logger/Chat_Logger.md)
   * Miscellaneous
     * [Leaf of the Forest (20)](/2017/picoCTF_2017/problems/misc/Leaf_of_the_Tree/Leaf_of_the_Tree.md)
     * [Leaf of the Tree (30)](/2017/picoCTF_2017/problems/misc/Leaf_of_the_Forest/Leaf_of_the_Forest.md)
