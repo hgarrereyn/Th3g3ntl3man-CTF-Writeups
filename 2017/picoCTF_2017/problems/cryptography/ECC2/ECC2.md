@@ -84,16 +84,16 @@ $$l \equiv l_1\pmod{p_1^{e_1}}\\l \equiv l_2\pmod{p_2^{e_2}}\\...\qquad\qquad\qq
 
 where $$l$$ denotes the discrete logarithm for the order of $$P$$, $$l_i$$ denotes discrete logarithm calculations for each of the smaller prime orders (factors) $$p$$ of $$P$$, and $$e_i$$ denotes the exponent of $$p$$.
 
-First, define an integer $$x$$ such that $$n = p_1^{e_1}p_2^{e_2}...p_{r}^{e_r}$$.
+First, define an integer $$x$$ such that $$x = p_1^{e_1}p_2^{e_2}...p_{r}^{e_r}$$  (in other words, $$x$$ is equivalent to the order of $$P$$).
 
 $$l_i$$ can be written in the form:
 
 $$l_i = z_0 + z_1\,p + z_2\,p_2 + ... + z_{e−1}p-1^{e-1}\\$$
 where $$z \in [0,\,p-1]$$.
 
-We then define the points $$P_0 = \frac{x}{p_i}P$$, and $$Q_0 = \frac{x}{p_i}Q$$.  
+We then define the points $$P_i = \frac{x}{p_i}P$$, and $$Q_i = \frac{x}{p_i}Q$$.  
 
-Since we know that the order of $$P_0$$ is $$p_i$$, we can rewrite the equation as $$Q_0 = lP_0 = z_0P_0$$, we can now solve for every $$z_0...z_{e-1}$$ by finding a value for $$z_i$$ such that $$Q_i = z_i*P_0$$.
+Since we know that the order of $$P_i$$ is $$p_i$$, we can rewrite the equation as $$Q_i = lP_i = z_iP_i$$, we can now solve for every $$z_0...z_{e-1}$$ by finding a value for $$z_i$$ such that $$Q_i = z_i*P_0$$.
 
 This is comparable to brute force in that if the value of $$p$$ is small enough, it is feasible to try all the values of $$z$$ in range of $$e$$ until a value which satisfies the equation above is found.
 
