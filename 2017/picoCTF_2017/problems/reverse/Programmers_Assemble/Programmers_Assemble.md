@@ -2,13 +2,13 @@
 #### Writeup by hgarrereyn
 * **Reverse Engineering**
 * *75 points*
-* Description: You found a text file with some really low level code. Some value at the beginning has been X'ed out. Can you figure out what should be there, to make main return the value 0x1? Submit the answer as a hexidecimal number, with no extraneous 0s. For example, the decimal number 2015 would be submitted as 0x7df, not 0x000007df
+* Description: You found a text [file](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/0e4c994d51130f747bf8d9932274cb85e3f0f1c5/2017/picoCTF_2017/problems/reverse/Programmers_Assemble/assembly.s) with some really low level code. Some value at the beginning has been X'ed out. Can you figure out what should be there, to make main return the value 0x1? Submit the answer as a hexidecimal number, with no extraneous 0s. For example, the decimal number 2015 would be submitted as 0x7df, not 0x000007df
 
 # Links
 
 Here is the file we were given:
 
-**assembly.s**
+[**assembly.s**](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/0e4c994d51130f747bf8d9932274cb85e3f0f1c5/2017/picoCTF_2017/problems/reverse/Programmers_Assemble/assembly.s)
 
 ```asm
 .global main
