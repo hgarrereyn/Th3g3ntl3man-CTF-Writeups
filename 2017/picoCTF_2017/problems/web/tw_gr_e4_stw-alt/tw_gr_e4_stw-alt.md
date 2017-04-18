@@ -8,7 +8,7 @@
 In the past few Toaster Wars problems, we've had to go up a few levels to get to the flag room, with the flag being on the last level. Lets try doing the same here.
 
 When we walk up to the 4th floor, we find:
-![TW_4.png](TW_4.png)
+![TW_4.png](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/master/2017/picoCTF_2017/problems/web/tw_gr_e4_stw-alt/TW_4.png?raw=true)
 
 The Stairwell is blocked off! :L
 
