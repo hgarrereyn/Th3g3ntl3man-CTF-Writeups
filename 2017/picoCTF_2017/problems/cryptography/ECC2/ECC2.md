@@ -67,11 +67,7 @@ Essentially, this challenge requires us to solve the Elliptic Curve Discrete Log
 1. MOV attack (involves finding linearly independent points and calculating Weil pairing to reduce ECDLP to over finite field instead of group of points on elliptic curve)
 2. Pohlig-Hellman (reduces discrete logarithm calculations to prime subgroups of the order of P and uses Chinese Remainder Theorem to solve system of congruences for discrete logarithm of the whole order )
 
-<<<<<<< HEAD
-\
-=======
 
->>>>>>> 1bec27b7933c66a512a3a3aa93689a0727dbf611
 We can rule out the MOV attack, since it is infeasible given the size of the elliptic curve order. However, factoring the order of our elliptic curve $$E$$ reveals many small prime factors, indicating that Pohlig-Hellman could be feasible:
 
 ```
@@ -83,15 +79,8 @@ The goal of Pohlig-Hellman and the mathematics leading to it is as follows:
 
 We are attempting to recreate a system of congruences to solve for the value of $$l$$ (referred to as $$n$$ in this problem):
 
-<<<<<<< HEAD
-$$l \equiv l_1\pmod{p_1^{e_1}}$$\
-$$l \equiv l_2\pmod{p_2^{e_2}}$$\
-$$...$$\
-$$l = l_i\pmod{p_i^{e_i}}$$
-=======
 
 $$l \equiv l_1\pmod{p_1^{e_1}}\\l \equiv l_2\pmod{p_2^{e_2}}\\...\qquad\qquad\qquad\,\,\,\\l \equiv l_i\pmod{p_i^{e_i}}$$
->>>>>>> 1bec27b7933c66a512a3a3aa93689a0727dbf611
 
 where $$l$$ denotes the discrete logarithm for the order of $$P$$, $$l_i$$ denotes discrete logarithm calculations for each of the smaller prime orders (factors) $$p$$ of $$P$$, and $$e_i$$ denotes the exponent of $$p$$.
 
@@ -99,11 +88,7 @@ First, define an integer $$x$$ such that $$n = p_1^{e_1}p_2^{e_2}...p_{r}^{e_r}$
 
 $$l_i$$ can be written in the form:
 
-<<<<<<< HEAD
-$$l_i = z_0 + z_1\,p + z_2\,p_2 + ... + z_{e−1}p-1^{e-1}$$\
-=======
 $$l_i = z_0 + z_1\,p + z_2\,p_2 + ... + z_{e−1}p-1^{e-1}\\$$
->>>>>>> 1bec27b7933c66a512a3a3aa93689a0727dbf611
 where $$z \in [0,\,p-1]$$.
 
 We then define the points $$P_0 = \frac{x}{p_i}P$$, and $$Q_0 = \frac{x}{p_i}Q$$.  
