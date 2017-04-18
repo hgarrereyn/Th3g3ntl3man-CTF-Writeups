@@ -15,6 +15,7 @@ We participated as `Daemons of Khorne`
 * [HashChain (90)](problems/cryptography/hashchains/hashchains.md)
 * [Small Sign (140)](problems/cryptography/Small_Sign/Small_Sign.md)
 * [Weirder RSA (150)](problems/cryptography/weirderRSA/weirderRSA.md)
+* [Encrypted Shell (190)](problems/cryptography/Encrypted_Shell/Encrypted_Shell.md)
 * [ECC2 (200)](problems/cryptography/ECC2/ECC2.md)
 
 ### Reverse Engineering

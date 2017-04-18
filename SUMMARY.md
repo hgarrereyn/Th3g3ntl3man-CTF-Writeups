@@ -12,7 +12,8 @@
     * [HashChain (90)](/2017/picoCTF_2017/problems/cryptography/hashchains/hashchains.md)
 	* [Small Sign (140)](/2017/picoCTF_2017/problems/cryptography/Small_Sign/Small_Sign.md)
     * [Weirder RSA (150)](/2017/picoCTF_2017/problems/cryptography/weirderRSA/weirderRSA.md)
-	* [ECC2 (200)](/2017/picoCTF_2017/problems/cryptography/ECC2/ECC2.md)
+    * [Encrypted Shell (190)](/2017/picoCTF_2017/problems/cryptography/Encrypted_Shell/Encrypted_Shell.md)
+    * [ECC2 (200)](/2017/picoCTF_2017/problems/cryptography/ECC2/ECC2.md)
   * Reverse Engineering
     * [Hex2Raw (20)](/2017/picoCTF_2017/problems/reverse/Hex2Raw/Hex2Raw.md)
     * [Raw2Hex (20)](/2017/picoCTF_2017/problems/reverse/Raw2Hex/Raw2Hex.md)
