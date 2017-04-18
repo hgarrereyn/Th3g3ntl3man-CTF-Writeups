@@ -20,6 +20,7 @@
     * [Programmers Assemble (75)](/2017/picoCTF_2017/problems/reverse/Programmers_Assemble/Programmers_Assemble.md)
     * [JSut Duck it Up (100)](/2017/picoCTF_2017/problems/reverse/JSut_Duck_it_Up/JSut_Duck_it_Up.md)
     * [Coffee (115)](/2017/picoCTF_2017/problems/reverse/Coffee/Coffee.md)
+	* [MIPS (140)](/2017/picoCTF_2017/problems/reverse/MIPS/MIPS.md)
     * [Forest (200)](/2017/picoCTF_2017/problems/reverse/Forest/Forest.md)
   * Web Exploitation
     * [A Happy Union (110)](/2017/picoCTF_2017/problems/web/a-happy-union/a-happy-union.md)

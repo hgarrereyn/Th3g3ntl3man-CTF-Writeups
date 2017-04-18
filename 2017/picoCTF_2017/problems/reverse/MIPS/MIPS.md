@@ -2,7 +2,7 @@
 #### Writeup by hgarrereyn
 * **Reverse Engineering**
 * *140 points*
-* Description: The modern renaissance man knows of many things, ranging from cyber security, to architecture. Can you prove that you're more than just a computer whiz? mips. Enter the flag as a hexadecimal number, prefixed by 0x
+* Description: The modern renaissance man knows of many things, ranging from cyber security, to architecture. Can you prove that you're more than just a computer whiz? [mips](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/f128bf7172a0a3ef5247010b8be21216c96fdf1a/2017/picoCTF_2017/problems/reverse/MIPS/mips.txt). Enter the flag as a hexadecimal number, prefixed by 0x
 
 # Overview
 
@@ -61,7 +61,7 @@ where `b0` is the most significant byte of the input and `b3` is the least.
 
 Now, we need integer solutions to this equation so I wrote a simple python force to check possibilites (note: it checks 2^16 solutions which is significantly reduced from the 2^32 possible solution space)
 
-[**mipsSolver.py**]()
+[**mipsSolver.py**](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/f128bf7172a0a3ef5247010b8be21216c96fdf1a/2017/picoCTF_2017/problems/reverse/MIPS/mipsSolver.py)
 
 ```python
 # By Harrison Green <hgarrereyn>
