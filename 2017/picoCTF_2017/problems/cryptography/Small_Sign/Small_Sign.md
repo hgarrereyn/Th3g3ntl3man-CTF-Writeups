@@ -14,8 +14,11 @@ Once we've encrypted as many messages we'd like in our 1 minute time frame, it a
 The equations for encrypting and decrypting RSA Signatures are (assuming no padding, as is the case in this problem):
 
 $$ c \equiv m^d \bmod N$$
+
 $$ m \equiv c^e \bmod N$$
+
 The modulii are generated securely, so theres no way we can factor those in a reasonable amount of time. But notice:
+
 $$ c_1c_2  \bmod N \equiv m_1^dm_2^d \bmod N\equiv (m_1m_2)^d \bmod N$$
 
 If we multiply two ciphertexts, the result of decrypting the ciphertexts will be the product of the original two messages!
