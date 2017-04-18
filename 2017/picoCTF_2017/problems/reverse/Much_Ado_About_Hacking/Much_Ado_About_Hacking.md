@@ -2,15 +2,15 @@
 #### Writeup by hgarrereyn
 * **Reverse Engineering**
 * *165 points*
-* Description: In a lonely file, you find prose written in an interesting style. What is this Shakespearean play? What does it have to say? How could one get it to produce this ending?
+* Description: In a lonely file, you find [prose](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/26df845426faa84a4d85b8444db55d52bbda7647/2017/picoCTF_2017/problems/reverse/Much_Ado_About_Hacking/MuchAdoAboutHacking.spl) written in an interesting style. What is this Shakespearean play? What does it have to say? How could one get it to produce this [ending](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/26df845426faa84a4d85b8444db55d52bbda7647/2017/picoCTF_2017/problems/reverse/Much_Ado_About_Hacking/ending.txt)?
 
 # Solution
 
 From the title and the file extension `.spl`, we are able to figure out that the provided file is written in the [Shakespeare Programming Language](https://en.wikipedia.org/wiki/Shakespeare_Programming_Language), an esoteric programming language.
 
-Our goal is to find the input to the program that outputs the provided [ending]():
+Our goal is to find the input to the program that outputs the provided [ending](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/26df845426faa84a4d85b8444db55d52bbda7647/2017/picoCTF_2017/problems/reverse/Much_Ado_About_Hacking/ending.txt):
 
-[**ending.txt**]()
+[**ending.txt**](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/26df845426faa84a4d85b8444db55d52bbda7647/2017/picoCTF_2017/problems/reverse/Much_Ado_About_Hacking/ending.txt)
 ```
 tu1|\h+&g\OP7@% :BH7M6m3g=
 ```
@@ -301,7 +301,7 @@ Here we see that `beatrice` is used as a counter to pop values off of the `bened
 
 This python code is still pretty cryptic. It might make more sense if we display this as a flow-graph. We see that the input is processed in reverse and we have a memory cell (`don_pedro`) that is applied to the next character each time.
 
-![flowchart]()
+![flowchart](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/26df845426faa84a4d85b8444db55d52bbda7647/2017/picoCTF_2017/problems/reverse/Much_Ado_About_Hacking/flowchart.png)
 
 Now that we understand how the forward pass works, let's see if we can write a program that takes the output and reconstructs the input.
 
@@ -309,7 +309,7 @@ Note: this is slightly more difficult due to the mod operator not being bidirect
 
 # Reconstruction Script:
 
-[**reconstruct.py**]()
+[**reconstruct.py**](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/26df845426faa84a4d85b8444db55d52bbda7647/2017/picoCTF_2017/problems/reverse/Much_Ado_About_Hacking/reconstruct.py)
 
 ```python
 # By Harrison Green <hgarrereyn>
@@ -352,7 +352,7 @@ print(in_str)
 
 # Decoding
 
-We can test if the script works like this:
+We can test if the script works by encoding and decoding some test strings:
 
 ```
 $ echo "some_random_string " | ./muchado | python reconstruct.py
