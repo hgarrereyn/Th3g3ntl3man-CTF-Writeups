@@ -2,7 +2,7 @@
 #### Writeup by hgarrereyn
 * **Binary Exploitation**
 * *125 points*
-* Description: In order to configure the login messsage for all the users on the system, you've been given access to a configuration console. See if you can get a shell on shell2017.picoctf.com:26325. console Source
+* Description: In order to configure the login messsage for all the users on the system, you've been given access to a configuration console. See if you can get a shell on shell2017.picoctf.com:26325. [console](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/2e841ccdce35093853044e14057a7f07927b06e8/2017/picoCTF_2017/problems/binary/Config_Console/console) [Source](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/2e841ccdce35093853044e14057a7f07927b06e8/2017/picoCTF_2017/problems/binary/Config_Console/config-console.c)
 
 # Solution
 
@@ -45,7 +45,7 @@ If we send `p sh` the program will call `set_prompt("sh")` and we will have shel
 
 # Script
 
-[**exploitConfigConsole.py**]()
+[**exploitConfigConsole.py**](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/2e841ccdce35093853044e14057a7f07927b06e8/2017/picoCTF_2017/problems/binary/Config_Console/exploitConfigConsole.py)
 
 ```python
 # By Harrison Green <hgarrereyn>
