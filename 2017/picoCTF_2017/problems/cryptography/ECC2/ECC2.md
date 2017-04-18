@@ -93,7 +93,7 @@ where $$z \in [0,\,p-1]$$.
 
 We then define the points $$P_i = \frac{x}{p_i}P$$, and $$Q_i = \frac{x}{p_i}Q$$.  
 
-Since we know that the order of $$P_0$$ is $$p_i$$, we can rewrite the equation as $$Q_0 = lP_0 = z_0P_0$$, we can now solve for every $$z_0...z_{e-1}$$ by finding a value for $$z_i$$ such that $$Q_i = z_i*P_0$$.
+Since we know that the order of $$P_i$$ is $$p_i$$, we can rewrite the equation as $$Q_i = lP_i = z_iP_i$$, we can now solve for every $$z_0...z_{e-1}$$ by finding a value for $$z_i$$ such that $$Q_i = z_i*P_0$$.
 
 This is comparable to brute force in that if the value of $$p$$ is small enough, it is feasible to try all the values of $$z$$ in range of $$e$$ until a value which satisfies the equation above is found.
 
