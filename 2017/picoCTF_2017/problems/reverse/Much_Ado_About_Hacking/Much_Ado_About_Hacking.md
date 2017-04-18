@@ -216,7 +216,9 @@ if not benedick == 32:
 	goto: S2
 ```
 
-The next lines are:
+So these lines effectively cause the input to loop reading characters until a character is read with the value `32`. That is the space character in ascii: `' ' == 32`.
+
+If we don't jump back, we see:
 
 ```spl
 Benedick:
@@ -232,3 +234,140 @@ benedick = benedick_stack.pop()
 ```
 
 ### Scene 3
+
+```spl
+Beatrice:
+Recall your latest blunder! You are as smelly as the difference between yourself and Achilles.  
+
+Benedick:
+You are as disgusting as the sum of yourself and a flirt-gill!
+
+[Exit Beatrice]
+[Enter Don John]
+
+Benedick:
+Thou art as damned as I.
+
+[Exit Don John]
+[Enter Don Pedro]
+
+Don Pedro:
+You are as rotten as the sum of yourself and myself.
+Thou art as normal as the remainder of the quotient between thyself and Cleopatra.
+
+[Exit Benedick]
+[Enter Don John]
+
+Don John:
+You are as good as I.
+
+[Exeunt]
+[Enter Beatrice and Benedick]
+
+Beatrice:
+You are as foul as the sum of yourself and Achilles. Speak your mind!
+
+Benedick:
+Are you better than nothing?
+
+Beatrice:
+If so, let us return to scene III.
+
+[Exeunt]
+```
+
+Here we see that `beatrice` is used as a counter to pop values off of the `benedick`. Then a few operations are done on the character before it is printed. The following python lines are equivelant:
+
+```python
+# S3:
+	benedick = benedick_stack.pop()
+	benedick = benedick - achilles
+
+	beatrice = beatrice - 1
+
+	don_john = benedrick
+
+	benedrick = benedrick + don_pedro
+	benedrick = benedrick % cleopatra
+
+	don_pedro = don_john
+
+	benedrick = benedrick + achilles
+	print(benedrick)
+
+	if beatrice > 0:
+		# GOTO: S3
+```
+
+This python code is still pretty cryptic. It might make more sense if we display this as a flow-graph. We see that the input is processed in reverse and we have a memory cell (`don_pedro`) that is applied to the next character each time.
+
+![flowchart]()
+
+Now that we understand how the forward pass works, let's see if we can write a program that takes the output and reconstructs the input.
+
+Note: this is slightly more difficult due to the mod operator not being bidirectional. We can get around that by assuming that the input to the mod operator would be in the range `[0,191)`. Therefore, if we have a positive number at that position, do nothing, and if we have a negative number, add `96`.
+
+# Reconstruction Script:
+
+[**reconstruct.py**]()
+
+```python
+# By Harrison Green <hgarrereyn>
+
+# The output we want to recreate
+out = raw_input()
+
+# Get the output values
+outVal = [ord(x) for x in out]
+
+# The memory operator (initially zero)
+b = 0
+
+# Initialize a new array the size of the output string
+c = [0] * len(out)
+
+for i in range(0, len(out)):
+	# First pass and disassociate from memory operator
+	c[i] = outVal[i] - 32 - b
+
+	# Reverse the mod function by assuming that inputs were in
+	# range [0,192)
+	if c[i] < 0:
+		c[i] = c[i] + 96
+
+	# Memory storage
+	b = c[i]
+
+	# Final pass
+	c[i] = c[i] + 32
+
+# Reverse array and convert back to string
+in_str = "".join([chr(x) for x in c][::-1])
+
+# Print
+print(in_str)
+```
+
+*Note: it does not output the trailing space as that was used only to signify the end of the input string*
+
+# Decoding
+
+We can test if the script works like this:
+
+```
+$ echo "some_random_string " | ./muchado | python reconstruct.py
+some_random_string
+```
+
+Cool, it works!
+
+Now let's run it on the ending we were provided:
+
+```
+$ cat ending.txt | python reconstruct.py
+Its@MidSuMm3rNights3xpl0!t
+```
+
+We submit that as our flag.
+
+Flag: `Its@MidSuMm3rNights3xpl0!t`
