@@ -42,5 +42,5 @@ We participated as `Daemons of Khorne`
 * [Chat Logger (200)](problems/binary/Chat_Logger/Chat_Logger.md)
 
 ### Misc
-* [Leaf of the Forest (20)](problems/misc/Leaf_of_the_Tree/Leaf_of_the_Tree.md)
-* [Leaf of the Tree (30)](problems/misc/Leaf_of_the_Forest/Leaf_of_the_Forest.md)
+* [Leaf of the Tree (20)](problems/misc/Leaf_of_the_Tree/Leaf_of_the_Tree.md)
+* [Leaf of the Forest (30)](problems/misc/Leaf_of_the_Forest/Leaf_of_the_Forest.md)
