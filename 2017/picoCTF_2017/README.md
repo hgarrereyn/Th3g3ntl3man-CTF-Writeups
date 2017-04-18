@@ -26,11 +26,13 @@ We participated as `Daemons of Khorne`
 * [JSut Duck it Up (100)](problems/reverse/JSut_Duck_it_Up/JSut_Duck_it_Up.md)
 * [Coffee (115)](problems/reverse/Coffee/Coffee.md)
 * [MIPS (140)](problems/reverse/MIPS/MIPS.md)
+* [Much Ado About Hacking (165)](problems/reverse/Much_Ado_About_Hacking/Much_Ado_About_Hacking.md)
 * [Forest (200)](problems/reverse/Forest/Forest.md)
 
 ### Web Exploitation
 * [A Happy Union (110)](/2017/picoCTF_2017/problems/web/a-happy-union/a-happy-union.md)
 * [TW_GR_E4_STW (200)](/2017/picoCTF_2017/problems/web/tw_gr_e4_stw/tw_gr_e4_stw.md)
+* [TW_GR_E4_STW Alternate Solution (200)](/2017/picoCTF_2017/problems/web/tw_gr_e4_stw-alt/tw_gr_e4_stw-alt.md)
 
 ### Binary Exploitation
 * [Guess the Number (75)](problems/binary/Guess_the_Number/Guess_the_Number.md)
