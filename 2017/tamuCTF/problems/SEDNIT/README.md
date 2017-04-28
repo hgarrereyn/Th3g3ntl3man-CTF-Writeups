@@ -5,7 +5,7 @@
 * **Reversing**
 * *200 points*
 * This program has a hidden functionality. Can you figure out what it is?
-[3638e844ab2f7844](3638e844ab2f7844)
+[3638e844ab2f7844](Th3g3ntl3man-CTF-Writeups/2017/tamuCTF/problems/SEDNIT/3638e844ab2f7844)
 
 We are given an executable, but I didn't have the necessary libraries installed to run it.
 So instead, I opened it up in atom, to see if there was anything that looked suspicious, as multiple stego problems were simply looking for base64 strings in the file in this CTF.
@@ -38,7 +38,7 @@ H2V49nqBQF/J6hAtd4J/JW8WxTZfjZs24NMTqi6a0ao=
 and the final message gives us a ciphertext!
 
 So we use asn1parse to get the factors and modulus from the  private key, and decode our ciphertext straightforwardly!
-Using the code in [decode.py](decode.py), we get:
+Using the code in [decode.py](Th3g3ntl3man-CTF-Writeups/2017/tamuCTF/problems/SEDNIT/3638e844ab2f7844), we get:
 
 `gigem{feels_g00d_2b_a_pIrate__04654a034d5ae22a}`
 

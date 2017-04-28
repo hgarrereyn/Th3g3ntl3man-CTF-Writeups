@@ -6,7 +6,7 @@
 * *200 points*
 * The communication between WikiLeaks and their informant is protected asymmetrically.
 Fortunately for you, they each have a little something in common.
-[input](input)
+[input](Th3g3ntl3man-CTF-Writeups/2017/tamuCTF/problems/commonplace/input)
 
 So we have two messages, (presumably the same plaintext), encrypted with two separate public exponents, under the same modulus.
 What can we do with this?
@@ -43,6 +43,6 @@ Originally, the problem had one modulus, two public exponents, 65537, and 65538,
 
 It turns out however, that there were several layers of errors on the admins end, that I helped fix. Essentially the attack was supposed to be a common modulus attack, where the same message was encrypted with two different public exponents, same modulus.
 Except two different messages were being encrypted at the time.
-There were also a few additional complications. 
+There were also a few additional complications.
 
 To help fix the problem, I ended up wroting a solver for how problem should've been, showed to admin, then helped fix generation code, then problem got updated and we solved it.
