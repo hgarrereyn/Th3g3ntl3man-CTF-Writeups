@@ -12,7 +12,7 @@ So we have two messages, (presumably the same plaintext), encrypted with two sep
 What can we do with this?
 Lets denote what we have as:
 
-$$ c_1,c_2,e_1,e_2,n $$
+$$ c_1,c_2,e_1,e_2,N $$
 
 We know that
 $$ GCD(e_1,e_2)==1$$
