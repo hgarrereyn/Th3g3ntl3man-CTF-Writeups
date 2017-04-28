@@ -1,6 +1,7 @@
 ### About
 
 * [Introduction](/README.md)
+* [The Team](/The_Team.md)
 
 ### 2017
 
