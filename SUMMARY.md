@@ -41,3 +41,6 @@
 * [ASIS CTF Quals 2017 (Apr. 7-9)](/2017/ASIS_CTF_Quals_2017/README.md)
   * [A Fine OTP Server (79/Crypto)](/2017/ASIS_CTF_Quals_2017/problems/A_Fine_OTP_Server/A_Fine_OTP_Server.md)
   * [DLP (158/Crypto)](/2017/ASIS_CTF_Quals_2017/problems/DLP/DLP.md)
+* [tamuCTF](/2017/tamuCTF/README.md)
+  * [commonplace (200)](/2017/tamuCTF/problems/commonplace/README.md)
+  * [SEDNIT (200)](/2017/tamuCTF/problems/SEDNIT/README.md)
