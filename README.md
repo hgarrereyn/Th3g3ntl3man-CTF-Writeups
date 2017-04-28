@@ -10,6 +10,7 @@ The source code for our solutions can be found [here.]( https://github.com/hgarr
 
 * [picoCTF 2017](https://2017.picoctf.com/about) (7/8013 HS, 10/12593 teams total)
 * [ASIS CTF Quals 2017](https://asis-ctf.ir/home/) (100/451)
+* [tamuCTF 2017](https://ctf.tamu.edu/) (35/780)
 
 ## Licences
 

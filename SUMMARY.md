@@ -30,6 +30,7 @@
     * [TW_GR_E4_STW Alternate Solution (200)](/2017/picoCTF_2017/problems/web/tw_gr_e4_stw-alt/tw_gr_e4_stw-alt.md)
   * Binary Exploitation
     * [Guess the Number (75)](/2017/picoCTF_2017/problems/binary/Guess_the_Number/Guess_the_Number.md)
+	* [Config Console (125)](/2017/picoCTF_2017/problems/binary/Config_Console/Config_Console.md)
 	* [Enter The Matrix (150)](/2017/picoCTF_2017/problems/binary/Enter_The_Matrix/Enter_The_Matrix.md)
 	* [Flagsay 2 (150)](/2017/picoCTF_2017/problems/binary/Flagsay_2/Flagsay_2.md)
 	* [Choose (150)](/2017/picoCTF_2017/problems/binary/Choose/Choose.md)
@@ -40,3 +41,6 @@
 * [ASIS CTF Quals 2017 (Apr. 7-9)](/2017/ASIS_CTF_Quals_2017/README.md)
   * [A Fine OTP Server (79/Crypto)](/2017/ASIS_CTF_Quals_2017/problems/A_Fine_OTP_Server/A_Fine_OTP_Server.md)
   * [DLP (158/Crypto)](/2017/ASIS_CTF_Quals_2017/problems/DLP/DLP.md)
+* [tamuCTF](/2017/tamuCTF/README.md)
+  * [commonplace (200)](/2017/tamuCTF/problems/commonplace/README.md)
+  * [SEDNIT (200)](/2017/tamuCTF/problems/SEDNIT/README.md)
