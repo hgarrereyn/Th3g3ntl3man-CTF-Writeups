@@ -7,4 +7,5 @@ The challenges for this CTF weren't really that good, and we were busy, so we di
 
 ## Problems
 
-* [So Random (75)](problems/commonplace/README.md)
+* [commonplace (200)](problems/commonplace/README.md)
+* [SEDNIT (200)](problems/SEDNIT/README.md)

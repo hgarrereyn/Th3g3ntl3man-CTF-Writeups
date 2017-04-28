@@ -43,3 +43,4 @@
   * [DLP (158/Crypto)](/2017/ASIS_CTF_Quals_2017/problems/DLP/DLP.md)
 * [tamuCTF](/2017/tamuCTF/README.md)
   * [commonplace (200)](/2017/tamuCTF/problems/commonplace/README.md)
+  * [SEDNIT (200)](/2017/tamuCTF/problems/SEDNIT/README.md)
