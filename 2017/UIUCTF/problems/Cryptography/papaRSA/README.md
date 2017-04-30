@@ -74,7 +74,7 @@ Thats odd.
 
 Sage's default value for epsilon is 1/8, so lets see what upperbound that would give.
 $$\frac{1}{5} - \frac{1}{8} = \frac{3}{40}$$
-$$2^{{4096}^\frac{3}{40}} = 2^{\frac{4096*3}{40}} = 2^{307.2} < x$$
+$$2^{4096^\frac{3}{40}} = 2^{\frac{4096*3}{40}} = 2^{307.2} < x$$
 
 No wonder it didn't work by default!
 Well no problem, if we just adjust epsilon we'll get our solution!
