@@ -26,7 +26,7 @@ That's a short message, and tiny exponent! I wonder if it even wraps around the 
 
 Size of ciphertext with no modular reduction is
 
-$$ 2^{{(8*96)}^5} = 2^{3840} < N $$
+$$2^{(8*96)^5} = 2^{3840} < N$$
 
 So our ciphertext didn't even wrap around the modulus, so we can just take the 5th root of it!
 
