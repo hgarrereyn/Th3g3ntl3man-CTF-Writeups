@@ -12,7 +12,9 @@ The CTF had terrific problems!
 
 ### Cryptography
 * [BabyRSA (200)](problems/Cryptography/babyRSA/README.md)
+* [Old TV (200)](problems/Cryptography/oldTV/README.md)
 * [PapaRSA (250)](problems/Cryptography/papaRSA/README.md)
+* [EULA (400)](problems/Cryptography/EULA/README.md)
 
 ### Reversing
 * [Taylor's_ Magical Flag Oracle (150)](problems/Reversing/Taylors_Magical_Flag_Oracle/README.md)

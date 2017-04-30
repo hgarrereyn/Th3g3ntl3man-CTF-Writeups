@@ -8,6 +8,8 @@
   * Cryptography
     * [BabyRSA (200)](/2017/UIUCTF/problems/Cryptography/babyRSA/README.md)
     * [PapaRSA (250)](/2017/UIUCTF/problems/Cryptography/papaRSA/README.md)
+    * [Old TV (200)](/2017/UIUCTF/problems/Cryptography/oldTV/README.md)
+    * [EULA (400)](/2017/UIUCTF/problems/Cryptography/EULA/README.md)
   * Reversing
     * [Taylor's_ Magical Flag Oracle (150)](/2017/UIUCTF/problems/Reversing/Taylors_Magical_Flag_Oracle/README.md)
 * [picoCTF](/2017/picoCTF_2017/README.md)
