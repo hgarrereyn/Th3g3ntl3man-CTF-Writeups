@@ -12,3 +12,6 @@ The CTF had terrific problems!
 
 ### Cryptography
 * [BabyRSA (200)](problems/Cryptography/babyRSA/README.md)
+
+### Reversing
+* [Taylor's_ Magical Flag Oracle (150)](problems/Reversing/Taylors_Magical_Flag_Oracle/README.md)
