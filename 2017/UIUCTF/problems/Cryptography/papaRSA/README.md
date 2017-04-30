@@ -57,7 +57,7 @@ Or can we!
 We know the difference between what we are given, and what the actual encrypted message is, starts at the 60th character from the left, or the 100th counter counting from the right.
 The difference in those last 99 characters is all 0, since they will be the same as whatever they are in `message`.
 If a number ends in a null byte, that means it is divisible by 256.
-Thus that means whatever the difference `x` is, it must be a multiple of $$ 256^99 = 2^792 $$.
+Thus that means whatever the difference `x` is, it must be a multiple of $$ 256^{99} = 2^{792} $$.
 
 So that means the polynomial f(x) will have the exact same zeroes as polynomial:
 
