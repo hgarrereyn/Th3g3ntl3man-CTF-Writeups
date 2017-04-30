@@ -4,7 +4,9 @@
 * [The Team](/The_Team.md)
 
 ### 2017
-
+* [UIUCTF](/2017/UIUCTF/README.md)
+  * Cryptography
+    * * [BabyRSA (200)](/2017/UIUCTF/problems/Cryptography/babyRSA/README.md)
 * [picoCTF](/2017/picoCTF_2017/README.md)
   * Forensics
     * [Wigle](/2017/picoCTF_2017/problems/forensics/Wigle/wigle.md)
