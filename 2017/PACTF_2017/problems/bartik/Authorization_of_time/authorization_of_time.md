@@ -5,7 +5,7 @@ Authorization of Time - 55 points
 Writeup by poortho
 ------
 Problem Statement:
-[qr.png](qr.png). `1489798809000`. Get me in.
+[qr.png](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/66038b5e3e96aff65fa07ddfe5c1fb1abfa2f61a/2017/PACTF_2017/problems/bartik/Authorization_of_time/qr.png). `1489798809000`. Get me in.
 
 Hint:
 

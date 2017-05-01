@@ -5,7 +5,7 @@ Substitute Teacher - 25 points
 Writeup by poortho
 ------
 Problem Statement:
-Mr. Michael S. “Mike” Rogers is the substitute teacher for the day, but he is having trouble deciphering the secret message that was left for him by the teacher. Mr. Rogers knows the note is in English, but that’s about all. Can you help him? [ENCRYPTED.txt](ENCRYPTED.txt)
+Mr. Michael S. “Mike” Rogers is the substitute teacher for the day, but he is having trouble deciphering the secret message that was left for him by the teacher. Mr. Rogers knows the note is in English, but that’s about all. Can you help him? [ENCRYPTED.txt](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/66038b5e3e96aff65fa07ddfe5c1fb1abfa2f61a/2017/PACTF_2017/problems/bartik/Substitute_teacher/ENCRYPTED.txt)
 
 Hint:
 
@@ -15,7 +15,7 @@ Frequency analysis.
 
 Writeup
 ------
-Based on the statement and the title, it's pretty obvious that this is a simple substitution cipher. We can use [quipqiup](quipqiup.com) to solve this.
+Based on the statement and the title, it's pretty obvious that this is a simple substitution cipher. We can use [quipqiup](http://quipqiup.com) to solve this.
 
 Plugging it in, we get:
 

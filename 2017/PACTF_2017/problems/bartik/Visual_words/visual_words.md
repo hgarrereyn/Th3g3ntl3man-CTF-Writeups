@@ -7,6 +7,8 @@ Writeup by poortho
 Problem Statement:
 Some of us are visual learners. Some of us learn best from texts. I’ve found the perfect [combination](visual.png)! It was a bit dark though, so I had to make it brighter by some factor.
 
+![](visual.png)
+
 Hint:
 
 Number, words, colors, data. It’s all really just numbers and math right?
@@ -19,7 +21,7 @@ Looking at the png, it doesnt seem like there is any hidden data. Stegsolve also
 
 Judging from the hint, we are supposed to use some sort of math to decode the flag.
 
-After closely inspecting the pixel values of the 12 pixels, we notice that every one of them is even. Perhaps this is what they mean by making it brighter? 
+After closely inspecting the pixel values of the 12 pixels, we notice that every one of them is even. Perhaps this is what they mean by making it brighter?
 
 As it turns out, dividing each rgb value of the twelve pixels gives us the flag.
 
