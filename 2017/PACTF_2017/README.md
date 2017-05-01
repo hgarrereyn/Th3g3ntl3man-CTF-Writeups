@@ -10,7 +10,7 @@ We participated as `Th3g3ntl3man`
 * [Et tu, Brute? (5 points)](problems/bartik/Et_tu_brute/et_tu.md)
 * [Whence I came (10 points)](problems/bartik/Whence_I_came/whence_i_came.md)
 * [1597463007 (15 points)](problems/bartik/1597463007/1597463007.md)
-* [Substitute Teacher (25 points)](problems/bartik/Substitute_teacher/Substite_teacher.md)
+* [Substitute Teacher (25 points)](problems/bartik/Substitute_teacher/Substitute_teacher.md)
 * [Dinosaur Never-forget System (30 points)](problems/bartik/Dinosaur_never-forget_system/Dinosaur_never-forget_system.md)
 * [Think of the Cube (35 points)](problems/bartik/Think_of_the_cube/Think_of_the_cube.md)
 * [Dinosaur Never-forget System Continued (40 points)](problems/bartik/Dinosaur_never-forget_system_continued/Dinosaur_never-forget_system_continued.md)
