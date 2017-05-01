@@ -18,3 +18,7 @@ The CTF had terrific problems!
 
 ### Reversing
 * [Taylor's_ Magical Flag Oracle (150)](problems/Reversing/Taylors_Magical_Flag_Oracle/README.md)
+
+### Recon
+* [Thematic (100)](2017/UIUCTF/problems/Recon/Thematic/README.md)
+* [Baby's First Recon (50)](2017/UIUCTF/problems/Recon/Babys_First_Recon/README.md)
