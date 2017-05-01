@@ -4,6 +4,9 @@
 * [The Team](/The_Team.md)
 
 ### 2017
+* [PACTF](/2017/PACTF/README.md)
+  * Round 1 - Bartik
+  * Round 2 - Boole
 * [UIUCTF](/2017/UIUCTF/README.md)
   * Cryptography
     * [BabyRSA (200)](/2017/UIUCTF/problems/Cryptography/babyRSA/README.md)
