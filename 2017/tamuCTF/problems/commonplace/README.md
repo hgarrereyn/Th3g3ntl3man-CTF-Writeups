@@ -6,7 +6,7 @@
 * *200 points*
 * The communication between WikiLeaks and their informant is protected asymmetrically.
 Fortunately for you, they each have a little something in common.
-[input](Th3g3ntl3man-CTF-Writeups/2017/tamuCTF/problems/commonplace/input)
+[input](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/7f2daab679cd091cf45d0e375eb2a17a2a3a5f37/2017/tamuCTF/problems/commonplace/input)
 
 So we have two messages, (presumably the same plaintext), encrypted with two separate public exponents, under the same modulus.
 What can we do with this?
