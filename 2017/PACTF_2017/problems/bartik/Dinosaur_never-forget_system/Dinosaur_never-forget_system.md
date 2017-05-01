@@ -21,7 +21,7 @@ Writeup
 ------
 Going to the link, it doesn't look like there is anything there. However, the problem title also references DNS, or domain name service. We can lookup the DNS records of the domain using an online tool.
 
-I used [this website](), which gives us:
+I used [this website](https://www.whois.com.au/whois/dns.html), which gives us:
 ```
 edger entry available at LEDGER subdomain -- flag: dinosaurs_must_stay_informed
 ```
