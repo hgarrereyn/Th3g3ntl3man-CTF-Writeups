@@ -31,7 +31,9 @@ they messed up s2! copy/paste fail! It should've been `d % (q-1)`.
 
 So now we have to figure out what we end up. The way CRT is done for the CRT-RSA speedup isn't the standard method of doing CRT, so I wasn't sure if it uses some hack for just RSA, or if it is a general method.
 
-In hindsight, there are easier ways to verify that it is a general method, but I decided to derive the formula used.
+-----------------------------
+
+##### Interlude - Seeing if this is the normal CRT
 
 We want to find a $$M$$ such that
 1) $$ M \equiv m_1 \mod p $$
@@ -53,7 +55,10 @@ $$ h = q^{-1}(m_1 - m_2) \mod p $$
 
 So lines 35-37 really are the normal CRT!!
 
+-----------------------------------
+
 In our case for the challenge, they are taking the CRT of:
+
 $$ m^{d \mod (p-1)} \mod p $$
 
 $$ m^{d \mod (p-1)} \mod q $$
@@ -62,7 +67,8 @@ which would just be:
 
 $$ m^{d \mod (p-1)} \mod N $$
 
-So our signature, `s` is really just $$s= m^{d \mod (p-1)} \mod N $$ You can verify this by testing this with your own RSA key.
+So our signature, `s` is really just $$m^{d \mod (p-1)} \mod N $$
+You can verify this by testing this with your own RSA key.
 
 Now recall the definition of d:
 
@@ -83,6 +89,7 @@ Which by Fermat's Little theorem is just m!
 So $$ s^e = m + xp $$ if we take away the modular reduction.
 
 $$ s^e - m = xp $$
+
 We know another number which has p as a factor, N. So we can get p via GCD.
 So $$p = GCD(s^e - m, N)$$
 
@@ -111,5 +118,6 @@ And after a bit of time spent computing that massive power, you get:
 ```
 b'\x02,u\x9fM;\x81/\x99g\xf9\xb9\x89\xb0\xd0\xdd\x05\x18ep\x9c\xff\xabQ<\xc1x\x89U\xab\xcf\xcdu\xa2\x18\xf9\xf5\x0br\xa8|\x15\x14g\xaf\x1c\xac\xbe\x9d\xba\xb3\r\x91\x14!6\x86\xb6\xe3p$0&\xef\xb9Z\x06\xc2p^\x1fR\xc0\xa6Eq\xe5%\xfab\xc3\xd5\xf0\xceH0f\\\xa3Z\xcfue6\x84D\x88[\xc6`H\x99\xb0\x96\xa9\xc4\xbb2\xd7,m\xae\x8f\x8fScbl\xfd\xc0K\xa7\xf6>\xfb\x08\x95\xde\xb6:\xe2\xb55\x1c\x80u:\x93\xc0K+\xed\xfex\x8e\xb3\x12\x0c\xdce\xa6\x91r\xba\x82\x1a\xe3\x93\x18\xa5\xed\xebB\x89\x17\xc9\x08\x8b?x\xc8,\xa1>u\xba\x99\xb6M\x8c\xcc\xadLK\x802v\x87|*2\x8e\x97\xb5\x1e\xf7jB\x98D\xc2\xd0\x17 \xd9\xc9\xd3]L\xefG\x9e\xccm\xf1\x93e\n0\xbf\xd4\x17\xd3\xd8.\xa1B\xfb\xea\x9c\x00flag{lower_latency_tho}\n'
 ```
+If you scroll all the way to the right, you'll see:
 
 `flag{lower_latency_tho}`
