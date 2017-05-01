@@ -5,9 +5,9 @@ Visual Words - 70 points
 Writeup by poortho
 ------
 Problem Statement:
-Some of us are visual learners. Some of us learn best from texts. I’ve found the perfect [combination](visual.png)! It was a bit dark though, so I had to make it brighter by some factor.
+Some of us are visual learners. Some of us learn best from texts. I’ve found the perfect [combination](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/1163937be68b89f028e16d4924aef2ac251d6a34/2017/PACTF_2017/problems/bartik/Visual_words/visual.png)! It was a bit dark though, so I had to make it brighter by some factor.
 
-![](visual.png)
+![](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/1163937be68b89f028e16d4924aef2ac251d6a34/2017/PACTF_2017/problems/bartik/Visual_words/visual.png)
 
 Hint:
 
