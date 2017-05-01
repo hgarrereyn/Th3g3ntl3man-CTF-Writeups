@@ -2,13 +2,13 @@
 #### Writeup by hgarrereyn
 * **Reverse Engineering**
 * *100 points*
-* Decider. Tie-Breaker - all u get is that and this
+* Decider. [Tie-Breaker](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/ec055096672b3ca26df1a600ae572486e5db4bc9/2017/PACTF_2017/problems/boole/Decider/decider.out) - all u get is that and [this](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/ec055096672b3ca26df1a600ae572486e5db4bc9/2017/PACTF_2017/problems/boole/Decider/daString.txt)
 
 *Note: To reach this problem, you had to take a gamble on a negative 20 point problem.*
 
 # Encrypted flag
 
-**daString.txt**
+[**daString.txt**](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/ec055096672b3ca26df1a600ae572486e5db4bc9/2017/PACTF_2017/problems/boole/Decider/daString.txt)
 ```
 SPQMSQTMSQQMPXYMSPVMSSVMSQWMSQQMPWYMPVPMPWYMPRXMPRQMPWQMSQWMSSSMSQXMSPPMSRSMPYUMPYSMSPRMSSTMSRXMPPYM
 ```
@@ -194,7 +194,7 @@ Here, the program loops through each character in the string and basically does 
 
 Here is a diagram to help explain what it does:
 
-![](encodeDiagram.png)
+![](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/ec055096672b3ca26df1a600ae572486e5db4bc9/2017/PACTF_2017/problems/boole/Decider/encodeDiagram.png)
 
 We can check this by breaking and examining the flag buffer in gdb:
 

@@ -2,7 +2,7 @@
 #### Writeup by hgarrereyn
 * **Reverse Engineering**
 * *40 points*
-* The flag is in encrypted.txt. You also get the decoder software. Unfortunately, the software is protected by its own custom DRM(Digital Rights Management). …And it’s very protective about its things.
+* The flag is in [encrypted.txt](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/ec055096672b3ca26df1a600ae572486e5db4bc9/2017/PACTF_2017/problems/boole/PACTF_DRM/encrypted.txt). You also get the [decoder software](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/ec055096672b3ca26df1a600ae572486e5db4bc9/2017/PACTF_2017/problems/boole/PACTF_DRM/decoder.out). Unfortunately, the software is protected by its own custom DRM(Digital Rights Management). …And it’s very protective about its things.
 
 # Solution
 

@@ -2,7 +2,7 @@
 #### Writeup by hgarrereyn
 * **Reverse Engineering**
 * *60 points*
-* Description: If this script were to finish, what would it output? MacOS Linux
+* Description: If this script were to finish, what would it output? [MacOS](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/ec055096672b3ca26df1a600ae572486e5db4bc9/2017/PACTF_2017/problems/bartik/ETA/macos.out) [Linux](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/ec055096672b3ca26df1a600ae572486e5db4bc9/2017/PACTF_2017/problems/bartik/ETA/linux.out)
 
 # Solution
 
