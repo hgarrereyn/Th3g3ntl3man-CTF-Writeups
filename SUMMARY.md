@@ -4,6 +4,13 @@
 * [The Team](/The_Team.md)
 
 ### 2017
+* [PACTF](/2017/PACTF/README.md)
+  * Round 1 - Bartik
+    * [ETA (60 points)](/2017/PACTF_2017/problems/bartik/ETA/ETA.md)
+  * Round 2 - Boole
+    * [Impossible Conditions (30 points)](/2017/PACTF_2017/problems/boole/Impossible_Conditions/Impossible_Conditions.md)
+    * [PACTF DRM (40 points)](/2017/PACTF_2017/problems/boole/PACTF_DRM/PACTF_DRM.md)
+    * [Decider (100 points)](/2017/PACTF_2017/problems/boole/Decider/Decider.md)
 * [UIUCTF](/2017/UIUCTF/README.md)
   * Cryptography
     * [BabyRSA (200)](/2017/UIUCTF/problems/Cryptography/babyRSA/README.md)
