@@ -4,7 +4,7 @@
 * [The Team](/The_Team.md)
 
 ### 2017
-* [PACTF](/2017/PACTF/README.md)
+* [PACTF](/2017/PACTF_2017/README.md)
   * Round 1 - Bartik
     * [ETA (60 points)](/2017/PACTF_2017/problems/bartik/ETA/ETA.md)
   * Round 2 - Boole
