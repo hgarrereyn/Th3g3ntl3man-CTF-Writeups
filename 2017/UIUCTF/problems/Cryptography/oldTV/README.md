@@ -7,7 +7,7 @@
 ## Problem
 gotta go fast
 
-[oldtv.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/UIUCTF_Crypto/2017/UIUCTF/problems/Cryptography/oldTV/oldtv.py) [out.txt](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/UIUCTF_Crypto/2017/UIUCTF/problems/Cryptography/oldTV/out.txt)
+[oldtv.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/master/2017/UIUCTF/problems/Cryptography/oldTV/oldtv.py) [out.txt](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/master/2017/UIUCTF/problems/Cryptography/oldTV/out.txt)
 
 ##Solution
 
@@ -94,7 +94,7 @@ We know another number which has p as a factor, N. So we can get p via GCD.
 So $$p = GCD(s^e - m, N)$$
 
 From there on its standard RSA for the flag!
-See [solver.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/UIUCTF_Crypto/2017/UIUCTF/problems/Cryptography/oldTV/solver.py) for the file, but here is the relevant code:
+See [solver.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/master/2017/UIUCTF/problems/Cryptography/oldTV/solver.py) for the file, but here is the relevant code:
 
 ```python
 def main():

@@ -8,7 +8,7 @@
 nc challenge.uiuc.tf 11345
 
 throwback to when the aztecs sacked mitlan
-[eula.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/UIUCTF_Crypto/2017/UIUCTF/problems/Cryptography/EULA/eula.py)
+[eula.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/4cd2aa69e6b21aa17fcd8d064d9658b1d7fe2430/2017/UIUCTF/problems/Cryptography/EULA/eula.py)
 
 ##Solution
 
@@ -27,7 +27,7 @@ https://nvd.nist.gov/vuln/detail/CVE-2016-1494
 , a CVE on this python RSA module, for key signing! And it was released way after 2015. Looks like we're onto something!
 
 And then I found https://blog.filippo.io/bleichenbacher-06-signature-forgery-in-python-rsa/
-which details how to perform a bleichenbacher attack on the python RSA module! Essentially this attack gives us a solution that will forge a signature for ANY modulus, as long as we are know the bitsize! Really all I did was code what was described on that page. My code is in [solver.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/UIUCTF_Crypto/2017/UIUCTF/problems/Cryptography/EULA/solver.py)
+which details how to perform a bleichenbacher attack on the python RSA module! Essentially this attack gives us a solution that will forge a signature for ANY modulus, as long as we are know the bitsize! Really all I did was code what was described on that page. My code is in [solver.py]https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/4cd2aa69e6b21aa17fcd8d064d9658b1d7fe2430/2017/UIUCTF/problems/Cryptography/EULA/solver.py)
 
 I'll describe the bleichenbacher attack anyway in my own words, because its cool.
 

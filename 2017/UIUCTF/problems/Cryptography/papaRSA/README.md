@@ -7,7 +7,7 @@
 ## Problem
 
 I screwed up with babyrsa and made it too easy! I fixed it and now it's paparsa!
-[paparsa.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/UIUCTF_Crypto/2017/UIUCTF/problems/Cryptography/papaRSA/paparsa.py) [paparsa.txt](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/UIUCTF_Crypto/2017/UIUCTF/problems/Cryptography/papaRSA/out.txt)
+[paparsa.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/master/2017/UIUCTF/problems/Cryptography/papaRSA/paparsa.py) [paparsa.txt](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/master/2017/UIUCTF/problems/Cryptography/papaRSA/out.txt)
 
 ## Solution
 
