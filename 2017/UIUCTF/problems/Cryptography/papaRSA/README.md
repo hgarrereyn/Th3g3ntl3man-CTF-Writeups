@@ -41,7 +41,7 @@ We can however use Coppersmith's method, which uses the Lenstra–Lenstra–Lov�
 
 We can however use Coppersmith's method. What it does is: for a monic polynomial modulo N, it finds the zeroes for the polynomial where $$x < N^{(1/degree(f(x))-epsilon}$$, where epsilon essentially determines the running time. (epsilon is normally around 1/7th or 1/8th)
 
-Since we can choose epsilon to be arbitrarily small, as long as our x follows: x^degree(f(x)) < N, coppersmith can solve it! It runs rather quickly, and thankfully sage already has it implemented! (It is the small_roots function)
+Since we can choose epsilon to be arbitrarily small, as long as our x follows: x^degree(f(x)) < N, coppersmith can solve for it! It runs rather quickly, and thankfully sage already has it implemented! (It is the small_roots function)
 
 We can treat Coppersmith's method as a blackbox, but the key behind how it works is it finds smaller polynomials that share the same small zero of the original polynomial, and it solves those smaller polynomials.
 
