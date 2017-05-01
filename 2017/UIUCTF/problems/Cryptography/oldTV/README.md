@@ -36,6 +36,7 @@ So now we have to figure out what we end up. The way CRT is done for the CRT-RSA
 ##### Interlude - Seeing if this is the normal CRT
 
 We want to find a $$M$$ such that
+
 1) $$ M \equiv m_1 \mod p $$
 
 2) $$ M \equiv m_2 \mod q $$

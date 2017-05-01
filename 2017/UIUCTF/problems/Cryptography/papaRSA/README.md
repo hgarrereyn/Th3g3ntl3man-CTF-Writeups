@@ -7,7 +7,8 @@
 ## Problem
 
 I screwed up with babyrsa and made it too easy! I fixed it and now it's paparsa!
-[paparsa.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/master/2017/UIUCTF/problems/Cryptography/papaRSA/paparsa.py) [paparsa.txt](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/master/2017/UIUCTF/problems/Cryptography/papaRSA/out.txt)
+
+[paparsa.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/master/2017/UIUCTF/problems/Cryptography/papaRSA/paparsa.py)     [paparsa.txt](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/master/2017/UIUCTF/problems/Cryptography/papaRSA/out.txt)
 
 ## Solution
 
@@ -30,26 +31,37 @@ print >> f, "c = {}".format(c)
 Looks like we're not getting as lucky as last problem, we have a pretty long message this time. `len(msg) = 406`, so
 
 $$ m^e ~= 2^{(406*8)^5} = 2^{16240} $$
+
 which is waay bigger than our modulus.
+
+---------------------------
+#### Interlude: Coppersmith's Method
 
 We can however use Coppersmith's method, which uses the Lenstra–Lenstra–Lovász lattice basis reduction algorithm (LLL), to solve this!
 
-We can however use Coppersmith's method. What it does is: for a monic polynomial modulo N, it finds the zeroes for the polynomial where x < N^(1/degree(f(x)) - epsilon), where epsilon essentially determines the running time. (epsilon is normally around 1/7th or 1/8th) Re-arranging that, and ignoring epsilon, as long as our x follows: x^degree(f(x)) < N, coppersmith can solve it! It runs rather quickly, and thankfully sage already has it implemented! (It is the small_roots function)
+We can however use Coppersmith's method. What it does is: for a monic polynomial modulo N, it finds the zeroes for the polynomial where $$x < N^{(1/degree(f(x))-epsilon}$$, where epsilon essentially determines the running time. (epsilon is normally around 1/7th or 1/8th)
+
+Since we can choose epsilon to be arbitrarily small, as long as our x follows: x^degree(f(x)) < N, coppersmith can solve it! It runs rather quickly, and thankfully sage already has it implemented! (It is the small_roots function)
 
 We can treat Coppersmith's method as a blackbox, but the key behind how it works is it finds smaller polynomials that share the same small zero of the original polynomial, and it solves those smaller polynomials.
+
+-----------------
 
 So in our case, we can make the polynomial:
 $$ f(x) = (message + x)^e - C \mod N$$
 
-Notice that when message + x is equal to the plaintext, f(x) = 0! If we have x, then we have the plaintext!
+Notice that when $$message + x$$ is equal to the plaintext, $$f(x) = 0$$ ! If we have x, then we have the plaintext!
 Message in our case will be the string they gave us, but with those X's replaced with null bytes, since we can't have x being negative.
 However, null bytes wouldn't render here, so I'll keep them as X's in strings. Just remember we are really working with them being null bytes.
 
 Buuuut there's one issue. The portion that's the difference, `XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\nyou know what i'm going to add an extra line here just to make your life miserable so deal with it` is 159 characters long.
 
 This makes the maximum value for x:
+
 $$x < (2^8)^{159} = 2^{1272}$$
+
 $$x^e < 2^{6360}$$
+
 which is way bigger than N, so we can't use Coppersmith.
 
 Or can we!
@@ -67,13 +79,17 @@ But now we have lowered the maximum value for x!
 Originally $$x < 2^{1272}$$, but now we've changed that to
 
 $$x*(2^{792}) < 2^{1272}, x < 2^{480}$$
+
 $$x^e < 2^{2040} < N$$
+
 So we can use coppersmith to solve this! For Coppersmith we have to make the polynomial monic, since g(x) is no longer monic, but sage can do this for us.
 But if we put our monic version of the polynomial into sage, we get no results.
 Thats odd.
 
 Sage's default value for epsilon is 1/8, so lets see what upperbound that would give.
-$$\frac{1}{5} - \frac{1}{8} = \frac{3}{40}$$
+
+$$\frac{1}{degree(f(x)}-epsilon = \frac{1}{5} - \frac{1}{8} = \frac{3}{40}$$
+
 $$2^{4096^\frac{3}{40}} = 2^{\frac{4096*3}{40}} = 2^{307.2} < x$$
 
 No wonder it didn't work by default!
@@ -105,5 +121,7 @@ sage: binascii.unhexlify(hex(Integer(message+xval)))
 ```
 
 And there's our flag!
+
 `flag{bu7_0N_4_w3Dn3sdAy_iN_a_c4f3_i_waTcH3dD_17_6eg1n_aga1n}`
+
 This was an awesome challenge!
