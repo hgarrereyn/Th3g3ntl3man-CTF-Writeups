@@ -2,7 +2,7 @@
 #### Writeup by Valar_Dragon
 * **Cryptography**
 * *75 points*
-* We found [sorandom.py](sorandom.py) running at shell2017.picoctf.com:33123. It seems to be outputting the flag but randomizing all the characters first. Is there anyway to get back the original flag?
+* We found [sorandom.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/7f2daab679cd091cf45d0e375eb2a17a2a3a5f37/2017/picoCTF_2017/problems/cryptography/SoRandom/sorandom.py) running at shell2017.picoctf.com:33123. It seems to be outputting the flag but randomizing all the characters first. Is there anyway to get back the original flag?
 
 Lets start by looking at sorandom.py!
 ```python

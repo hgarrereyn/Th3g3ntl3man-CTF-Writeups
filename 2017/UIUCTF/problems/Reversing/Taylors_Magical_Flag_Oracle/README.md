@@ -13,7 +13,7 @@ Note: flag follows the "flag{" format and is all lowercase
 Update: Scores have been reset due to a bug that caused the flag to be printed without a legitimate solve. Scripts that solve the challenge in the intended way should still work.
 
 nc challenge.uiuc.tf 11340
-[compare_flag.py](compare_flag.py)
+[compare_flag.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/4cd2aa69e6b21aa17fcd8d064d9658b1d7fe2430/2017/UIUCTF/problems/Reversing/Taylors_Magical_Flag_Oracle/compare_flag.py)
 
 ### Solution
 
@@ -47,7 +47,7 @@ You can't see it on the markdown, but there was a quarter second delay between e
 
 If there is an extra quarter second delay, we know that we have found another character of the flag.
 
-The code used to solve this is in [NetcatHelper.py](NetcatHelper.py),
+The code used to solve this is in [NetcatHelper.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/4cd2aa69e6b21aa17fcd8d064d9658b1d7fe2430/2017/UIUCTF/problems/Reversing/Taylors_Magical_Flag_Oracle/NetcatHelper.py),
 eventually we get that the flag is flag{trchrus}, and we can verify this over the netcat connection:
 
 ```

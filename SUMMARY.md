@@ -12,6 +12,9 @@
     * [EULA (400)](/2017/UIUCTF/problems/Cryptography/EULA/README.md)
   * Reversing
     * [Taylor's_ Magical Flag Oracle (150)](/2017/UIUCTF/problems/Reversing/Taylors_Magical_Flag_Oracle/README.md)
+  * Recon
+    * [Thematic (100)](2017/UIUCTF/problems/Recon/Thematic/README.md)
+    * [Baby's First Recon (50)](2017/UIUCTF/problems/Recon/Babys_First_Recon/README.md)
 * [picoCTF](/2017/picoCTF_2017/README.md)
   * Forensics
     * [Wigle](/2017/picoCTF_2017/problems/forensics/Wigle/wigle.md)
