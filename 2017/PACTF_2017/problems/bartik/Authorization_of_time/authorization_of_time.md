@@ -1,5 +1,5 @@
 
-Authorization of Time - 60 points
+Authorization of Time - 55 points
 ===
 
 Writeup by poortho
