@@ -4,13 +4,6 @@
 * [The Team](/The_Team.md)
 
 ### 2017
-* [PACTF](/2017/PACTF_2017/README.md)
-  * Round 1 - Bartik
-    * [ETA (60 points)](/2017/PACTF_2017/problems/bartik/ETA/ETA.md)
-  * Round 2 - Boole
-    * [Impossible Conditions (30 points)](/2017/PACTF_2017/problems/boole/Impossible_Conditions/Impossible_Conditions.md)
-    * [PACTF DRM (40 points)](/2017/PACTF_2017/problems/boole/PACTF_DRM/PACTF_DRM.md)
-    * [Decider (100 points)](/2017/PACTF_2017/problems/boole/Decider/Decider.md)
 * [UIUCTF](/2017/UIUCTF/README.md)
   * Cryptography
     * [BabyRSA (200)](/2017/UIUCTF/problems/Cryptography/babyRSA/README.md)
@@ -22,6 +15,26 @@
   * Recon
     * [Thematic (100)](2017/UIUCTF/problems/Recon/Thematic/README.md)
     * [Baby's First Recon (50)](2017/UIUCTF/problems/Recon/Babys_First_Recon/README.md)
+* [PACTF](/2017/PACTF_2017/README.md)
+  * Round 1 - Bartik
+    * [Et tu, Brute? (5 points)](2017/PACTF_2017/problems/bartik/Et_tu_brute/et_tu.md)
+    * [Whence I came (10 points)](2017/PACTF_2017/problems/bartik/Whence_I_came/whence_i_came.md)
+    * [1597463007 (15 points)](2017/PACTF_2017/problems/bartik/1597463007/1597463007.md)
+    * [Substitute Teacher (25 points)](2017/PACTF_2017/problems/bartik/Substitute_teacher/Substitute_teacher.md)
+    * [Dinosaur Never-forget System (30 points)](2017/PACTF_2017/problems/bartik/Dinosaur_never-forget_system/Dinosaur_never-forget_system.md)
+    * [Think of the Cube (35 points)](2017/PACTF_2017/problems/bartik/Think_of_the_cube/Think_of_the_cube.md)
+    * [Dinosaur Never-forget System Continued (40 points)](2017/PACTF_2017/problems/bartik/Dinosaur_never-forget_system_continued/Dinosaur_never-forget_system_continued.md)
+    * [Mega Encryption (40 points)](2017/PACTF_2017/problems/bartik/Mega_Encryption/README.md)
+    * [Authorization of Time (55 points)](2017/PACTF_2017/problems/bartik/Authorization_of_time/authorization_of_time.md)
+    * [ETA (60 points)](2017/PACTF_2017/problems/bartik/ETA/ETA.md)
+    * [Haystack (60 points)](2017/PACTF_2017/problems/bartik/Haystack/haystack.md)
+    * [What 3 Words (60 points)](2017/PACTF_2017/problems/bartik/What_3_words/what_3_words.md)
+    * [Visual Words (70 points)](2017/PACTF_2017/problems/bartik/Visual_words/visual_words.md)
+    * [Bitesized (80 points)](2017/PACTF_2017/problems/bartik/Bitesized/bitesized.md)
+  * Round 2 - Boole
+    * [Impossible Conditions (30 points)](/2017/PACTF_2017/problems/boole/Impossible_Conditions/Impossible_Conditions.md)
+    * [PACTF DRM (40 points)](/2017/PACTF_2017/problems/boole/PACTF_DRM/PACTF_DRM.md)
+    * [Decider (100 points)](/2017/PACTF_2017/problems/boole/Decider/Decider.md)
 * [picoCTF](/2017/picoCTF_2017/README.md)
   * Forensics
     * [Wigle](/2017/picoCTF_2017/problems/forensics/Wigle/wigle.md)
