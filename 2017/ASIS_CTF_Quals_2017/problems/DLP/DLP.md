@@ -5,7 +5,7 @@
 * You should solve a DLP challenge, but how? Of course , you don't expect us to give you a regular and boring DLP problem!
 `nc 146.185.143.84 28416`
 
-![nc Server](DLP.png)
+![nc Server](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/master/2017/ASIS_CTF_Quals_2017/problems/DLP/DLP.png?raw=true)
 
 Let's look at the function they used to encrypt this:
 

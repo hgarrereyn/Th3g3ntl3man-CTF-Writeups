@@ -1,9 +1,23 @@
 ### About
 
 * [Introduction](/README.md)
+* [The Team](/The_Team.md)
 
 ### 2017
-
+* [PACTF](/2017/PACTF/README.md)
+  * Round 1 - Bartik
+  * Round 2 - Boole
+* [UIUCTF](/2017/UIUCTF/README.md)
+  * Cryptography
+    * [BabyRSA (200)](/2017/UIUCTF/problems/Cryptography/babyRSA/README.md)
+    * [PapaRSA (250)](/2017/UIUCTF/problems/Cryptography/papaRSA/README.md)
+    * [Old TV (200)](/2017/UIUCTF/problems/Cryptography/oldTV/README.md)
+    * [EULA (400)](/2017/UIUCTF/problems/Cryptography/EULA/README.md)
+  * Reversing
+    * [Taylor's_ Magical Flag Oracle (150)](/2017/UIUCTF/problems/Reversing/Taylors_Magical_Flag_Oracle/README.md)
+  * Recon
+    * [Thematic (100)](2017/UIUCTF/problems/Recon/Thematic/README.md)
+    * [Baby's First Recon (50)](2017/UIUCTF/problems/Recon/Babys_First_Recon/README.md)
 * [picoCTF](/2017/picoCTF_2017/README.md)
   * Forensics
     * [Wigle](/2017/picoCTF_2017/problems/forensics/Wigle/wigle.md)
@@ -36,8 +50,11 @@
 	* [Choose (150)](/2017/picoCTF_2017/problems/binary/Choose/Choose.md)
 	* [Chat Logger (200)](/2017/picoCTF_2017/problems/binary/Chat_Logger/Chat_Logger.md)
   * Miscellaneous
-    * [Leaf of the Forest (20)](/2017/picoCTF_2017/problems/misc/Leaf_of_the_Tree/Leaf_of_the_Tree.md)
-    * [Leaf of the Tree (30)](/2017/picoCTF_2017/problems/misc/Leaf_of_the_Forest/Leaf_of_the_Forest.md)
+    * [Leaf of the Tree (20)](/2017/picoCTF_2017/problems/misc/Leaf_of_the_Tree/Leaf_of_the_Tree.md)
+    * [Leaf of the Forest (30)](/2017/picoCTF_2017/problems/misc/Leaf_of_the_Forest/Leaf_of_the_Forest.md)
 * [ASIS CTF Quals 2017 (Apr. 7-9)](/2017/ASIS_CTF_Quals_2017/README.md)
   * [A Fine OTP Server (79/Crypto)](/2017/ASIS_CTF_Quals_2017/problems/A_Fine_OTP_Server/A_Fine_OTP_Server.md)
   * [DLP (158/Crypto)](/2017/ASIS_CTF_Quals_2017/problems/DLP/DLP.md)
+* [tamuCTF](/2017/tamuCTF/README.md)
+  * [commonplace (200)](/2017/tamuCTF/problems/commonplace/README.md)
+  * [SEDNIT (200)](/2017/tamuCTF/problems/SEDNIT/README.md)

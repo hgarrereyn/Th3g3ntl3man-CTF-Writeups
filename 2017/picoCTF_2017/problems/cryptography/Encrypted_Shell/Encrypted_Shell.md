@@ -6,7 +6,7 @@
 
 ### Problem
 
-[This service](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/Pico/2017/picoCTF_2017/problems/cryptography/Encrypted_Shell/dhshell.py) gives a shell, but it's password protected! We were able intercept [this encrypted traffic](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/Pico/2017/picoCTF_2017/problems/cryptography/Encrypted_Shell/traffic.pcap)
+[This service](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/master/2017/picoCTF_2017/problems/cryptography/Encrypted_Shell/dhshell.py) gives a shell, but it's password protected! We were able intercept [this encrypted traffic](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/master/2017/picoCTF_2017/problems/cryptography/Encrypted_Shell/traffic.pcap)
 which may contain a successful password authentication. Can you get shell access and read the contents of flag.txt?
 The service is running at shell2017.picoctf.com:40209.
 
@@ -24,7 +24,7 @@ So if you dive into the source code behind the service, you see that it does ind
 That seems pretty secure, no way we're ever gonna be able to brute 2**46!
 
 The server asks for B (the parameter of our choosing), then the remainder of the communication with the server must be symmetrically encrypted with this diffie hellman key.
-The encryption, decryption, and padding methods are all provided in [dhshell.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/Pico/2017/picoCTF_2017/problems/cryptography/Encrypted_Shell/dhshell.py), so we don't have to worry about that. The messages are essentially based on AES, so the padding is secure.
+The encryption, decryption, and padding methods are all provided in [dhshell.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/master/2017/picoCTF_2017/problems/cryptography/Encrypted_Shell/dhshell.py), so we don't have to worry about that. The messages are essentially based on AES, so the padding is secure.
 
 After we give it B, it asks us for the password. (Well it doesn't ask, you have to read src to figure that out.) If you enter the password correctly, your command gets run over the shell. Otherwhise you get booted out.
 Interestingly, the admins actually had left several errors in the file, which if we run:
@@ -56,7 +56,7 @@ We get the location of the problems directory, which is on the same server we ha
 
 If we open Traffic.pcap, and follow the TCP Stream, we get the DH public keys for the session.
 
-![TCP Stream](https://raw.githubusercontent.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/Pico/2017/picoCTF_2017/problems/cryptography/Encrypted_Shell/TCP_Stream.png)
+![TCP Stream](https://raw.githubusercontent.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/master/2017/picoCTF_2017/problems/cryptography/Encrypted_Shell/TCP_Stream.png)
 
 So the general approach that we need to take is fairly clear.
 We need to crack A or B in the given TCP Stream, and then generate that shared secret key to decode the password.

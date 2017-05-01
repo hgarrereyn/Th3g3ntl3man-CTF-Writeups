@@ -6,7 +6,7 @@
 * *140 points*
 * This service outputs a flag if you can forge an RSA signature!
 nc shell2017.picoctf.com 27465
-[smallsign.py](smallsign.py)
+[smallsign.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/7f2daab679cd091cf45d0e375eb2a17a2a3a5f37/2017/picoCTF_2017/problems/cryptography/Small_Sign/smallsign.py)
 
 If we connect to the server, we see that it gives us a RSA modulus, public exponent, and a maximum of 1 minute for it to encrypt and return any message we'd like.
 Once we've encrypted as many messages we'd like in our 1 minute time frame, it asks us to forge an RSA signature of a number they give.
@@ -33,7 +33,7 @@ So we just have to keep on trying to get the server to sign primes with the vary
 
 @ifm-tech wrote an awesome socket connector for this problem, so handling talking to the server became easy.
 
-Getting the server to sign our messages takes awhile, so since we can't sign that many messages in one minute, and so it will take awhile before we get a challenge which we can fully factor into our small signed primes. So we start our [solution](solution.py), and go take a snack break, and then get the output:
+Getting the server to sign our messages takes awhile, so since we can't sign that many messages in one minute, and so it will take awhile before we get a challenge which we can fully factor into our small signed primes. So we start our [solution](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/7f2daab679cd091cf45d0e375eb2a17a2a3a5f37/2017/picoCTF_2017/problems/cryptography/Small_Sign/solution.py), and go take a snack break, and then get the output:
 
 ```
 $ python solution.py
