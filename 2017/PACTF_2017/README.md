@@ -8,6 +8,7 @@ We participated as `Th3g3ntl3man`
 #### Round 1 - Bartik
 
 * [ETA (60 points)](problems/bartik/ETA/ETA.md)
+* [Mega Encryption (40 points)](problems/bartik/Mega_Encryption/README.md)
 
 #### Round 2 - Boole
 
