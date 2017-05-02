@@ -10,4 +10,4 @@ We are a ctf team composed of high school students from various schools in the U
 * valar_dragon - Cryptograhy
 * hgarrereyn - Binexp & RE
 * intelagent
-* egg
+* poortho
