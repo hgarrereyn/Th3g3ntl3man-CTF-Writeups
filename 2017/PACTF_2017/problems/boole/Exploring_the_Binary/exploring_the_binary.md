@@ -7,7 +7,7 @@ Writeup by poortho
 Problem Statement:
 Binary 1
 
-Why doesn’t [this file](a.out) print!! Did I forget to put in the print statement when I compiled?
+Why doesn’t [this file](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/20050537d284122523a4309013f5e68f20ac3380/2017/PACTF_2017/problems/boole/Exploring_the_Binary/a.out) print!! Did I forget to put in the print statement when I compiled?
 
 Hint:
 

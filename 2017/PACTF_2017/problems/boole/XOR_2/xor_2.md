@@ -5,7 +5,7 @@ XOR 2 - 40 points
 Writeup by poortho
 ------
 Problem Statement:
-Miles just sent me a really cool article to read! Unfortunately, he encrypted it before he sent it to me. Can you crack the code for me so I can read the article? [Article.txt](article.txt)
+Miles just sent me a really cool article to read! Unfortunately, he encrypted it before he sent it to me. Can you crack the code for me so I can read the article? [Article.txt](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/20050537d284122523a4309013f5e68f20ac3380/2017/PACTF_2017/problems/boole/XOR_2/article.txt)
 
 Hint:
 

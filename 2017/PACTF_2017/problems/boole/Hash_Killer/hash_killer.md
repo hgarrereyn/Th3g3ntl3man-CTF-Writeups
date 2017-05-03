@@ -7,7 +7,7 @@ Writeup by poortho
 Problem Statement:
 Qu’est que c’est?
 
-We were clearing out the old server and came across a really weird [file](hashes.txt)…
+We were clearing out the old server and came across a really weird [file](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/20050537d284122523a4309013f5e68f20ac3380/2017/PACTF_2017/problems/boole/Hash_Killer/hashes.txt)…
 
 Hint:
 
