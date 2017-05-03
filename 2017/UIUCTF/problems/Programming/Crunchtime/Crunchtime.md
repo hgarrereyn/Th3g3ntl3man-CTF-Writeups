@@ -5,7 +5,7 @@
 * *300 points*
 * Being a pirate is all right with me. `nc challenge.uiuc.tf 11341` https://www.youtube.com/watch?v=pMhfbLRoGEw
 * Files:
-  * [encodeTones.py]()
+  * [encodeTones.py](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/a51fb02757b38c01fc0bc3cd5d5fcc762fd98e7a/2017/UIUCTF/problems/Programming/Crunchtime/encode_tones.py)
 * 5 Solves
 
 # Solution
@@ -35,7 +35,7 @@ with open('tmp_raw', 'r') as f:
 	raw = f.read()
 ```
 
-The services may be offline, so I've included a datastring I previously saved: [**tmp_raw**]()
+The services may be offline, so I've included a datastring I previously saved: [**tmp_raw**](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/a51fb02757b38c01fc0bc3cd5d5fcc762fd98e7a/2017/UIUCTF/problems/Programming/Crunchtime/tmp_raw)
 
 ## Decoding
 
@@ -108,9 +108,9 @@ Therefore, in order to decode the signal, we must take each segment and determin
 
 I wrote some saved data to a wav file in order to visualize the tones:
 
-[**tmp.wav**]()
+[**tmp.wav**](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/a51fb02757b38c01fc0bc3cd5d5fcc762fd98e7a/2017/UIUCTF/problems/Programming/Crunchtime/tmp.wav)
 
-![](spectrogram.png)
+![](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/a51fb02757b38c01fc0bc3cd5d5fcc762fd98e7a/2017/UIUCTF/problems/Programming/Crunchtime/spectrogram.png)
 
 Notice how there are 11 distinct chunks each with two tones. We need to be able to determine these frequencies given the raw waveform data.
 
@@ -120,7 +120,7 @@ The function we are looking for is called the *Fourier Transform* which is a fun
 # Script
 Here is my python implementation:
 
-[**solveCrunchtime.py**]()
+[**solveCrunchtime.py**](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/a51fb02757b38c01fc0bc3cd5d5fcc762fd98e7a/2017/UIUCTF/problems/Programming/Crunchtime/solveCrunchtime.py)
 ```python
 # By Harrison Green <hgarrereyn>
 
