@@ -214,7 +214,7 @@ flag = ""
 
 while True:
 	raw = sock.recvline()
-	if (!raw):
+	if not raw:
 		break
 
 	data = output_decode(raw[2:-1])
