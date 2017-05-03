@@ -24,6 +24,15 @@ We participated as `Th3g3ntl3man`
 
 #### Round 2 - Boole
 
+* [Exploring the Binary!! (10 points)](problems/boole/Exploring_the_Binary/exploring_the_binary.md)
+* [Time Travel (20 points)](problems/boole/Time_Travel/time_travel.md)
+* [XOR 1 (20 points)](problems/boole/XOR_1/xor_1.md)
 * [Impossible Conditions (30 points)](problems/boole/Impossible_Conditions/Impossible_Conditions.md)
+* [Zeroes and Ones (30 points)](problems/boole/Zeroes_and_Ones/zeroes_and_ones.md)
 * [PACTF DRM (40 points)](problems/boole/PACTF_DRM/PACTF_DRM.md)
+* [Quantum Theory (40 points)](problems/boole/Quantum_Theory/quantum.md)
+* [Remember md5? (40 points)](problems/boole/Remember_MD5/remember_md5.md)
+* [XOR 2 (40 points)](problems/boole/XOR_2/xor_2.md)
+* [Hash Killer (60 points)](problems/boole/Hash_Killer/hash_killer.md)
+* [Synesthesia (60 points)](problems/boole/Synesthesia/synesthesia.md)
 * [Decider (100 points)](problems/boole/Decider/Decider.md)
