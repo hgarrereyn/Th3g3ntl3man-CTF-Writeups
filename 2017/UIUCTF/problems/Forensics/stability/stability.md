@@ -19,7 +19,7 @@ This problem is actually very easy, and way more teams could have solved it.
 
 Given this information, we can open up the .vmem file using a hex editor (I used [HxD](https://mh-nexus.de/en/hxd/)). We can simply ctrl+f "blockchain" and we eventually get the password, which is the flag.
 
-![](screenshot.png):perm
+![](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/53ee63b2d47c9497d05fdc8b0109c76d9c01241e/2017/UIUCTF/problems/Forensics/stability/screenshot.png?raw=true)
 
 # Flag
 
