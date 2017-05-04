@@ -2,7 +2,7 @@
 
 #### Writeup by Valar_Dragon
 * **Cryptography, RSA Signature**
-* 7 Solves (We were the frst solve!)
+* 7 Solves (We were the first solve!)
 
 ## Problem
 gotta go fast

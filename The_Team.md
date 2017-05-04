@@ -7,7 +7,7 @@ We are a ctf team composed of high school students from various schools in the U
 # Current members
 
 * sanguinius
-* valar_dragon - Cryptograhy
+* [valar_dragon](https://github.com/ValarDragon) - Cryptography
 * hgarrereyn - Binexp & RE
 * intelagent
 * poortho

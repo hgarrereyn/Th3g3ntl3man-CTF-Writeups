@@ -39,7 +39,7 @@ which is waay bigger than our modulus.
 
 We can however use Coppersmith's method, which uses the Lenstra–Lenstra–Lovász lattice basis reduction algorithm (LLL), to solve this!
 
-We can however use Coppersmith's method. What it does is: for a monic polynomial modulo N, it finds the zeroes for the polynomial where $$x < N^{(1/degree(f(x))-epsilon}$$, where epsilon essentially determines the running time. (epsilon is normally around 1/7th or 1/8th)
+What it does is: for a monic polynomial modulo N, it finds the zeroes for the polynomial where $$x < N^{(1/degree(f(x))-epsilon}$$, where epsilon essentially determines the running time. (epsilon is normally around 1/7th or 1/8th)
 
 Since we can choose epsilon to be arbitrarily small, as long as our x follows: x^degree(f(x)) < N, coppersmith can solve for it! It runs rather quickly, and thankfully sage already has it implemented! (It is the small_roots function)
 
