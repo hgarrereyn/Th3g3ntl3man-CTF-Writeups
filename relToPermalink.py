@@ -4,6 +4,16 @@ import requests
 """
 Program to search through all markdown files in the repo, and look for links in the form:
 (*)[<relative link>]:perm
+
+The relative link can be from the root, or from the current directory
+i.e:
+['potatoes'](Front_Page.png):perm
+['potatoes'](/logo_512.png):perm
+both convert to permalinks correctly.
+If you want it to be linked as a raw file (necessary for embedded images), add that filetype to the imgEndings array.
+
+If we are done with writeups for a particular CTF, add the name of that directory
+to exclude array.
 """
 
 
@@ -12,9 +22,9 @@ shortened_github_url = base_github_url[len("https://github.com"):] + 'blob/'
 check_files_ending_in = ".md"
 reSearch = re.compile("(\[.*?\]\(.*?\):perm)")
 imgEndings = ['.png','.jpg','.jpeg','.gif']
+exclude = ['.git','picoCTF_2017','tamuCTF']
 
 def main():
-    exclude = ['.git','picoCTF_2017','PACTF_2017']
     for root, dirs, files in os.walk('.', topdown=True):
         dirs[:] = [d for d in dirs if d not in exclude]
         for f in files:
