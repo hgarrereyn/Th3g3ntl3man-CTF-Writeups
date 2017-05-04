@@ -17,6 +17,9 @@
     * [Baby's First Recon (50)](2017/UIUCTF/problems/Recon/Babys_First_Recon/README.md)
   * Programming
     * [Crunchtime (300)](2017/UIUCTF/problems/Programming/Crunchtime/Crunchtime.md)
+  * Forensics
+    * [Stability (200)](2017/UIUCTF/problems/Forensics/stability/stability.md)
+    * [Salted Wounds (200)](2017/UIUCTF/problems/Forensics/salted_wounds/salted_wounds.md)
 * [PACTF](/2017/PACTF_2017/README.md)
   * Round 1 - Bartik
     * [Et tu, Brute? (5 points)](2017/PACTF_2017/problems/bartik/Et_tu_brute/et_tu.md)
