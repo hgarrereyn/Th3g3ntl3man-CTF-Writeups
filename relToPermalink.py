@@ -14,6 +14,9 @@ If you want it to be linked as a raw file (necessary for embedded images), add t
 
 If we are done with writeups for a particular CTF, add the name of that directory
 to exclude array.
+
+The file you are linking to must be committed and pushed to github, and exist on the branch
+which base_github_url is pointing too. Adjust base_github_url for different branches.
 """
 
 
@@ -56,7 +59,7 @@ def main():
                             continue
                         if(useRaw):
                             githubURL = githubURL + "?raw=true"
-                        newMatch = match.replace(path,githubURL)[:-5]
+                        newMatch = match.replace('('+path,'('+githubURL)[:-5]
                         print("converting %s to %s" % (match,newMatch))
                         fcontents = fcontents.replace(match,newMatch)
                     open(root+'/'+f,'w').write(fcontents)
