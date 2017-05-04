@@ -25,3 +25,7 @@ The CTF had terrific problems!
 
 ### Programming
 * [Crunchtime (300)](2017/UIUCTF/problems/Programming/Crunchtime/Crunchtime.md)
+
+### Forensics
+* [Stability (200)](2017/UIUCTF/problems/Forensics/stability/stability.md)
+* [Salted Wounds (200)](2017/UIUCTF/problems/Forensics/salted_wounds/salted_wounds.md)
