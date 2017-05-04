@@ -5,7 +5,7 @@
 * *200 points*
 * There are some challenges I'd rather forget.
 * Files:
-  * [https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/53ee63b2d47c9497d05fdc8b0109c76d9c01241e/2017/UIUCTF/problems/Forensics/salted_wounds/zmap.pdf](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/53ee63b2d47c9497d05fdc8b0109c76d9c01241e/2017/UIUCTF/problems/Forensics/salted_wounds/zmap.pdf)
+  * [zmap.pdf](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/blob/53ee63b2d47c9497d05fdc8b0109c76d9c01241e/2017/UIUCTF/problems/Forensics/salted_wounds/zmap.pdf)
 * 11 Solves
 
 # Solution
