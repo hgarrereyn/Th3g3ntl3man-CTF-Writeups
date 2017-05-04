@@ -25,6 +25,7 @@ imgEndings = ['.png','.jpg','.jpeg','.gif']
 exclude = ['.git','picoCTF_2017','tamuCTF']
 
 def main():
+    notFound = []
     for root, dirs, files in os.walk('.', topdown=True):
         dirs[:] = [d for d in dirs if d not in exclude]
         for f in files:
@@ -50,12 +51,17 @@ def main():
                         else:
                             URL =  base_github_url + root + '/' + path
                         githubURL = convertURLtoPermalink(URL)
+                        if(githubURL == -1):
+                            notFound.append(path + " linked from file: " + root+'/'+f)
+                            continue
                         if(useRaw):
                             githubURL = githubURL + "?raw=true"
                         newMatch = match.replace(path,githubURL)[:-5]
                         print("converting %s to %s" % (match,newMatch))
                         fcontents = fcontents.replace(match,newMatch)
                     open(root+'/'+f,'w').write(fcontents)
+    if(len(notFound) > 0):
+        print("The following files were not found: " + str(notFound))
 
 
 def convertURLtoPermalink(URL):
@@ -63,8 +69,13 @@ def convertURLtoPermalink(URL):
     r = requests.get(URL)
     text = r.text
     #print(text)
-    cutdownText = text[:text.index("class=\"d-none js-permalink-shortcut\" data-hotkey=\"y\">Permalink</a>")]
-    cutdownText = cutdownText[cutdownText.rindex("<a href=\"")+9:-2]
-    return "https://github.com" + cutdownText
+    try:
+        cutdownText = text[:text.index("class=\"d-none js-permalink-shortcut\" data-hotkey=\"y\">Permalink</a>")]
+        cutdownText = cutdownText[cutdownText.rindex("<a href=\"")+9:-2]
+        return "https://github.com" + cutdownText
+    except:
+        print("----------File %s not found----------" % URL)
+        print("Are you sure you committed and pushed it?")
+        return -1
 
 main()
