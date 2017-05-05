@@ -24,4 +24,8 @@ The CTF had terrific problems!
 * [Baby's First Recon (50)](2017/UIUCTF/problems/Recon/Babys_First_Recon/README.md)
 
 ### Programming
-* [Crunchtime (300)](2017/UIUCTF/problems/Crunchtime/Crunchtime.md)
+* [Crunchtime (300)](2017/UIUCTF/problems/Programming/Crunchtime/Crunchtime.md)
+
+### Forensics
+* [Stability (200)](2017/UIUCTF/problems/Forensics/stability/stability.md)
+* [Salted Wounds (200)](2017/UIUCTF/problems/Forensics/salted_wounds/salted_wounds.md)
