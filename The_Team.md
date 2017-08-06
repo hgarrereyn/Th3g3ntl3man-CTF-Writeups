@@ -8,6 +8,7 @@ We are a ctf team composed of high school students from various schools in the U
 
 * sanguinius
 * [valar_dragon](https://github.com/ValarDragon) - Cryptography
-* hgarrereyn - Binexp & RE
+* [hgarrereyn](https://github.com/hgarrereyn) - Binexp & RE
 * intelagent
 * poortho
+* danx
