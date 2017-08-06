@@ -89,3 +89,6 @@
 * [tamuCTF](/2017/tamuCTF/README.md)
   * [commonplace (200)](/2017/tamuCTF/problems/commonplace/README.md)
   * [SEDNIT (200)](/2017/tamuCTF/problems/SEDNIT/README.md)
+* [SHA2017CTF]()
+  * Pwnable
+    * [Megan-35 (200)](/2017/SHA2017CTF/problems/pwnable/megan-35/README.md)
