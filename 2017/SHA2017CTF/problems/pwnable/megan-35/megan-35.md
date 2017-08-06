@@ -3,6 +3,10 @@
 * **Pwnable**
 * *200 points*
 * Description: We created our own Megan-35 decoding tool, feel free to test it. System is running Ubuntu 16.04, ASLR is disabled.
+#### Files:
+* [megan-35](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/c99bfdb5c01af5443bb952d560012d09a4d0e32e/2017/SHA2017CTF/problems/pwnable/megan-35/megan-35)
+* [libc.so.6](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/c99bfdb5c01af5443bb952d560012d09a4d0e32e/2017/SHA2017CTF/problems/pwnable/megan-35/libc.so.6)
+* [exploit script](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/c99bfdb5c01af5443bb952d560012d09a4d0e32e/2017/SHA2017CTF/problems/pwnable/megan-35/solve.py)
 
 # Solution
 
@@ -57,6 +61,7 @@ Using the same method, you could leak a stack pointer and calculate the offset t
 Once you had both these values, you could craft a 4 part format string attack (writing two bytes with `$hn`) and get a shell.
 
 # Script
+[view raw](https://github.com/hgarrereyn/Th3g3ntl3man-CTF-Writeups/raw/c99bfdb5c01af5443bb952d560012d09a4d0e32e/2017/SHA2017CTF/problems/pwnable/megan-35/solve.py)
 
 ```py
 # by hgarrereyn
