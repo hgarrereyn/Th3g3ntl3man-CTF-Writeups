@@ -79,7 +79,7 @@ Higher addresses	| param 3 	|
 					| %ebx		|	<= %esp
 ```
 
-In the description, the problem tells us to assume we are using a 32 bit system. That means that each value on the stack takes up exactly 4 bytes. Therefore, every time we push something onto the stack, we *decrement esp by 0x4*. Therefore, at this moment, the difference between the saved return address and the value of `esp` is `4 (pushes) * 4 (bytes per push) = 0xf`.
+In the description, the problem tells us to assume we are using a 32 bit system. That means that each value on the stack takes up exactly 4 bytes. Therefore, every time we push something onto the stack, we *decrement esp by 0x4*. Therefore, at this moment, the difference between the saved return address and the value of `esp` is `4 (pushes) * 4 (bytes per push) = 0x10`.
 
 Now we execute a `sub` command:
 
@@ -104,7 +104,7 @@ Higher addresses	| param 3 	|
 					|			|	<= %esp
 ```
 
-The difference between `esp` and the location of the saved return address is now: `0xf + 0x12c = 0x13c` because we have just moved the stack pointer even further away from saved return address (remember stack grows towards lower addresses).
+The difference between `esp` and the location of the saved return address is now: `0x10 + 0x12c = 0x13c` because we have just moved the stack pointer even further away from saved return address (remember stack grows towards lower addresses).
 
 The next 4 `mov` instructions do not actually modify `esp`. The parenthesis around `%esp` means that it is being dereferenced. Instead of moving values into the `%esp` register, the `mov` commands are writing values to the place that `%esp` is pointing to (on the stack).
 
